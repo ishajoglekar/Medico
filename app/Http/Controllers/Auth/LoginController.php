@@ -41,9 +41,9 @@ class LoginController extends Controller
 
     public function logout(Request $request)
     {
-        
-        if(auth()->user()){
-            if(auth()->user()->doctor_id != NULL){
+
+        if (auth()->user()) {
+            if (auth()->user()->doctor_id != NULL) {
                 auth()->user()->doctor->online->delete();
             }
             $this->guard()->logout();

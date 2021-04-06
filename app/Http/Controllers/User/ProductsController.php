@@ -51,19 +51,18 @@ class ProductsController extends Controller
         $isInCart = false;
         $quantity = 1;
         $cart = auth()->user()->cart;
-        if($cart){
+        if ($cart) {
             $products = $cart->products;
-            foreach($products as $item){
-                if($item->id == $product->id){
+            foreach ($products as $item) {
+                if ($item->id == $product->id) {
                     $quantity = $item->pivot->quantity;
-                    if($quantity>=1)
+                    if ($quantity >= 1)
                         $isInCart = true;
                 }
             }
         }
         // dd($isInCart);
-        return view('user.pharma.single_product',compact(['product','isInCart','quantity']));
-
+        return view('user.pharma.single_product', compact(['product', 'isInCart', 'quantity']));
     }
 
     /**
@@ -99,71 +98,72 @@ class ProductsController extends Controller
     {
         //
     }
-    public function addToCart(Request $request){
+    public function addToCart(Request $request)
+    {
 
-        $count =0;
+        $count = 0;
         $isInCart = false;
         $product = Product::find($request->product_id);
         $cart = auth()->user()->cart;
-        if(!$cart){
+        if (!$cart) {
             $cart = Cart::create([
-                'user_id'=>auth()->user()->id
+                'user_id' => auth()->user()->id
             ]);
         }
         // dd($cart);
         $quantity = 1;
         // dd(auth()->user()->cart->products);
         $products = $cart->products;
-        foreach($products as $item){
-            if($item->id == $product->id){
+        foreach ($products as $item) {
+            if ($item->id == $product->id) {
                 $isInCart = true;
             }
-            $count+=1;
+            $count += 1;
         }
         // dd($isInCart);
-        if(!$isInCart){
-            $cart->products()->attach($product->id,['quantity'=>1]);
-            $count+=1;
+        if (!$isInCart) {
+            $cart->products()->attach($product->id, ['quantity' => 1]);
+            $count += 1;
             // dd($count);
         }
 
         // dd($cart->products->count());
-        return json_encode(['count'=>$count]);
+        return json_encode(['count' => $count]);
     }
-    public function updateQuantity(Request $request){
+    public function updateQuantity(Request $request)
+    {
 
         $products = auth()->user()->cart->products;
         $count = auth()->user()->cart->products->count();
         // dd($count);
-        foreach($products as $item){
-            if($item->id == $request->product_id && $request->quantity<=0){
+        foreach ($products as $item) {
+            if ($item->id == $request->product_id && $request->quantity <= 0) {
 
                 auth()->user()->cart->products()->detach($item->id);
                 $count--;
                 // dd($count);
-                return json_encode(['quantity'=>0,'finalAmount'=>$this->getFinalAmmount(auth()->user()->cart->products,$item->id,$request->quantity),'count'=>$count]);
-            }
-            else if($item->id == $request->product_id && $request->quantity>0){
-                auth()->user()->cart->products()->updateExistingPivot($item,array('quantity' => $request->quantity),false);
+                return json_encode(['quantity' => 0, 'finalAmount' => $this->getFinalAmmount(auth()->user()->cart->products, $item->id, $request->quantity), 'count' => $count]);
+            } else if ($item->id == $request->product_id && $request->quantity > 0) {
+                auth()->user()->cart->products()->updateExistingPivot($item, array('quantity' => $request->quantity), false);
                 $quantityy = $item->pivot->quantity;
                 // dd($quantityy);
-                return json_encode(['quantity'=>$quantityy,'finalAmount'=>$this->getFinalAmmount(auth()->user()->cart->products,$item->id,$request->quantity),'count'=>$count]);
+                return json_encode(['quantity' => $quantityy, 'finalAmount' => $this->getFinalAmmount(auth()->user()->cart->products, $item->id, $request->quantity), 'count' => $count]);
             }
         }
         return null;
     }
 
-    public function getFinalAmmount($products,$item,$quantity){
+    public function getFinalAmmount($products, $item, $quantity)
+    {
 
-        $finalAmount=0;
-        foreach($products as $product){
+        $finalAmount = 0;
+        foreach ($products as $product) {
             // dd($product->pivot->quantity);
-            if($product->id == $item){
-                $finalAmount+=$product->price * $quantity;
-            }else{
+            if ($product->id == $item) {
+                $finalAmount += $product->price * $quantity;
+            } else {
                 $finalAmount += $product->price * $product->pivot->quantity;
             }
-
         }
         return $finalAmount;
     }

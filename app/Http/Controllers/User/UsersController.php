@@ -22,8 +22,8 @@ class UsersController extends Controller
     public function index()
     {
         $user = User::find(auth()->user()->id);
-        
-        return view('user.dashboard.profile',compact(['user']));
+
+        return view('user.dashboard.profile', compact(['user']));
     }
 
     /**
@@ -66,7 +66,6 @@ class UsersController extends Controller
      */
     public function edit(User $user)
     {
-
     }
 
     /**
@@ -78,7 +77,6 @@ class UsersController extends Controller
      */
     public function update(Request $request, User $user)
     {
-
     }
 
     /**
@@ -91,31 +89,35 @@ class UsersController extends Controller
     {
         //
     }
-    public function editUser(User $user){
-        return view('user.dashboard.edit-profile',compact('user'));
+    public function editUser(User $user)
+    {
+        return view('user.dashboard.edit-profile', compact('user'));
     }
-    public function updateUserdata(UpdateUserRequest $request){
+    public function updateUserdata(UpdateUserRequest $request)
+    {
         $user = User::find(auth()->user()->id);
         $user->update([
-            'name'=>$request->name,
-            'email'=>$request->email,
-            'password'=>Hash::make($request->password),
-            'gender'=>$request->gender,
-            'age'=>$request->age,
-            'phone_no'=>$request->phone_no
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'gender' => $request->gender,
+            'age' => $request->age,
+            'phone_no' => $request->phone_no
         ]);
-        return redirect(route('user.dashboard.profile',$user));
+        return redirect(route('user.dashboard.profile', $user));
     }
-    public function getUser(Request $request){
+    public function getUser(Request $request)
+    {
         $user = User::findOrFail($request->user_id);
         return json_encode($user);
     }
 
-    public function createChatAppointment(){
+    public function createChatAppointment()
+    {
         $specialities = Speciality::all();
         $count = OnlineDoctor::all()->count();
-        return view('user.findDoctor.chatAppointment',compact([
-            'specialities','count'
+        return view('user.findDoctor.chatAppointment', compact([
+            'specialities', 'count'
         ]));
     }
     /*public function bookChatAppointment(Request $request){
@@ -186,22 +188,22 @@ class UsersController extends Controller
 
     }*/
 
-    public function bookChatAppointment(Request $request){
+    public function bookChatAppointment(Request $request)
+    {
 
         $onlinedocs = OnlineDoctor::all();
-        $doctors=[];
+        $doctors = [];
         $randomDoctor = NULL;
 
 
-        foreach($onlinedocs as $onlinedoc)
-        {
+        foreach ($onlinedocs as $onlinedoc) {
 
-            if($onlinedoc->doctor->speciality_id == $request->speciality_id){
+            if ($onlinedoc->doctor->speciality_id == $request->speciality_id) {
                 $doctors[] = $onlinedoc->doctor;
             }
         }
-        if(count($doctors) > 0)
-            $randomDoctor = $doctors[rand(0,count($doctors) - 1)];
+        if (count($doctors) > 0)
+            $randomDoctor = $doctors[rand(0, count($doctors) - 1)];
 
 
         $appointment = Appointment::create([
@@ -212,92 +214,86 @@ class UsersController extends Controller
             'chat_duration' => now()->addDays(1)
         ]);
         $temp = ChatTemp::create([
-            'doctor_id'=>$randomDoctor->id,
-            'appointment_id'=>$appointment->id
+            'doctor_id' => $randomDoctor->id,
+            'appointment_id' => $appointment->id
         ]);
         return json_encode($appointment);
-
     }
 
-    public function checkChatBookedAppointment(Request $request){
+    public function checkChatBookedAppointment(Request $request)
+    {
         $appointment = Appointment::find($request->appointment_id);
-        if($appointment->status == "accept"){
-            return json_encode(["status"=>"accept"]);
-        }
-        else if($appointment->status == "reject"){
+        if ($appointment->status == "accept") {
+            return json_encode(["status" => "accept"]);
+        } else if ($appointment->status == "reject") {
             $mainCount = $request->mainCount + 1;
-            if($mainCount <= 3){
-                if($this->bookAnotherDoctorAppointment($appointment)){
-                    return json_encode(["status"=>"pending","count"=>0]);
-                }
-                else{
+            if ($mainCount <= 3) {
+                if ($this->bookAnotherDoctorAppointment($appointment)) {
+                    return json_encode(["status" => "pending", "count" => 0]);
+                } else {
                     $appointment->temp()->delete();
                     $appointment->delete();
-                    return json_encode(["status"=>"unavailable"]);
+                    return json_encode(["status" => "unavailable"]);
                 }
             }
-            return json_encode(["status"=>"reject","mainCount"=>$mainCount]);
-        }
-        else if($request->count > 10){
+            return json_encode(["status" => "reject", "mainCount" => $mainCount]);
+        } else if ($request->count > 10) {
             $mainCount = $request->mainCount + 1;
-            if($mainCount <= 2){
-                if($this->bookAnotherDoctorAppointment($appointment)){
-                    return json_encode(["status"=>"pending","count"=>0]);
-                }
-                else{
+            if ($mainCount <= 2) {
+                if ($this->bookAnotherDoctorAppointment($appointment)) {
+                    return json_encode(["status" => "pending", "count" => 0]);
+                } else {
                     $appointment->temp()->delete();
                     $appointment->delete();
-                    return json_encode(["status"=>"unavailable"]);
+                    return json_encode(["status" => "unavailable"]);
                 }
             }
-            return json_encode(["status"=>"timedout","mainCount"=>$mainCount]);
+            return json_encode(["status" => "timedout", "mainCount" => $mainCount]);
         }
     }
-    public function bookAnotherDoctorAppointment($appointment){
-        $alreadyAssigned = ChatTemp::where('appointment_id',$appointment->id)->get();
+    public function bookAnotherDoctorAppointment($appointment)
+    {
+        $alreadyAssigned = ChatTemp::where('appointment_id', $appointment->id)->get();
         $onlinedocs = [];
 
-        if(!empty($alreadyAssigned)){
-            $newArr = [] ;
-            foreach($alreadyAssigned as $doc){
-                $newArr[] = ['doctor_id','!=',$doc->doctor_id];
+        if (!empty($alreadyAssigned)) {
+            $newArr = [];
+            foreach ($alreadyAssigned as $doc) {
+                $newArr[] = ['doctor_id', '!=', $doc->doctor_id];
             }
             $onlinedocs = OnlineDoctor::where($newArr)->get();
         }
 
-        $doctors=[];
+        $doctors = [];
         $randomDoctor = NULL;
 
-        foreach($onlinedocs as $onlinedoc)
-        {
+        foreach ($onlinedocs as $onlinedoc) {
 
-            if($onlinedoc->doctor->speciality_id == $appointment->doctor->speciality_id){
+            if ($onlinedoc->doctor->speciality_id == $appointment->doctor->speciality_id) {
                 $try = $onlinedoc->doctor;
-                if($try != Null)
-                $doctors[] = $try;
+                if ($try != Null)
+                    $doctors[] = $try;
             }
-
         }
-        if(count($doctors) > 0)
-        {
-            $randomDoctor = $doctors[rand(0,count($doctors) - 1)];
+        if (count($doctors) > 0) {
+            $randomDoctor = $doctors[rand(0, count($doctors) - 1)];
 
             // dd($randomDoctor);
 
-            $appointment->update(['doctor_id'=>$randomDoctor->id,'status'=>"pending"]);
+            $appointment->update(['doctor_id' => $randomDoctor->id, 'status' => "pending"]);
             $appointment->save();
 
             $temp = ChatTemp::create([
-                'doctor_id'=>$randomDoctor->id,
-                'appointment_id'=>$appointment->id
+                'doctor_id' => $randomDoctor->id,
+                'appointment_id' => $appointment->id
             ]);
             return true;
-        }
-        else{
+        } else {
             return false;
         }
     }
-    public function getCurrentLocation(Request $request){
+    public function getCurrentLocation(Request $request)
+    {
         // $ip = \Request::ip();
         $ip = '43.231.238.110';
         $data = \Location::get($ip);
