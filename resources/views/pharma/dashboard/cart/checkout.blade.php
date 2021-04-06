@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','Practo | Pharma Dashboard')
+@section('title','Medico | Pharma Dashboard')
 
 @section('styles')
 <style>
@@ -142,7 +142,7 @@
                                        <p>Standard Delivery</p>
                                    </div>
                                    <div class="card-body">
-                                       <p>Delivered by Practo Powered Pharmacy</p>
+                                       <p>Delivered by Medico Powered Pharmacy</p>
                                        <hr>
                                        <p>All items are available <br>Delivery by Sep 25</p>
                                        <hr>
@@ -252,7 +252,7 @@
 <script>
 var coupon_id =-1;
 
-var id = {{auth()->user()->id}};
+var id = '{{auth()->user()->id}}';
 $("#login-tab").click(function(){
   $("#login").toggle();
   $("#user-icon").removeClass('d-none');
@@ -325,7 +325,7 @@ var coupon = $('#coupon').val();
             _token: "{{ csrf_token() }}",
             'user_id': id,
             'coupon': coupon,
-            'amount':{{$finalAmount}}
+            'amount':{{$finalAmount}},
         },
         dataType : 'json',
         success: function(success){

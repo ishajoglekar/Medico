@@ -26,12 +26,7 @@
               <span>Feedback</span>
               </a>
           </li>
-          <li>
-            <a  href="">
-              <i class="fa fa-users"></i>
-              <span>Patients</span>
-              </a>
-          </li>
+         
 
         </ul>
         <!-- sidebar menu end-->

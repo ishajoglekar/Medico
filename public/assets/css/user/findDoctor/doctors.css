@@ -1,0 +1,277 @@
+p {
+    margin: 0!important;
+}
+
+#filters {
+    background-color: #28328C;
+    color: #FFF;
+    padding: 5px 0px 10px 180px;
+    width: 100%;
+    position: sticky;
+    top: 74px;
+    left: 0;
+    z-index: 999;
+}
+
+#filters .filter-box {
+    background-color: #434ea2;
+    /* min-width: 160px;
+    height: 30px; */
+    border: none;
+    padding: .4rem;
+}
+
+#filters .sort-by .sortby {
+    width: 72px;
+}
+
+#filters .dropdown {
+    color: #FFF;
+}
+
+option {
+    background-color: #FFF;
+    color: #000;
+}
+
+.select-filter {
+    background-color: #28328C;
+    color: #FFF;
+    padding: 5px 0px 0px 180px;
+    position: absolute;
+    width: 100%;
+    top: 45px;
+    left: 0;
+}
+
+.select-filter .content {
+    border-top: solid 1px #fff;
+    margin-right: 40px;
+}
+
+.select-filter .filter-type {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.select-filter .sm {
+    font-size: 14px;
+}
+
+.select-filter .filter-by-gender {
+    margin-right: 120px;
+}
+
+#list-doctors #doctors .doctor {
+    padding-bottom: 30px;
+    border-bottom: solid 1px #CCC;
+}
+
+#list-doctors #doctors .heading .filtered-count {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#list-doctors #doctors .heading .sub-title {
+    color: #787887;
+    font-size: 14px;
+}
+
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details {
+    width: 100%;
+}
+
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details .doctor-img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+}
+
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details .view-profile {
+    color: #14bef0;
+    font-weight: 700;
+}
+
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details .doctor-info {
+    width: 100%;
+}
+
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details .doctor-info .doctor-name {
+    color: #14bef0;
+    font-size: 20px;
+}
+
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details .doctor-info .specialization,
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details .doctor-info .experience-years {
+    color: #787887;
+    font-size: 0.9rem;
+}
+
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details .doctor-info .address .location {
+    color: #414146;
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details .doctor-info .address .clinic-name {
+    color: #414146;
+    font-size: 0.9rem;
+}
+
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details .doctor-info .fees>span {
+    color: #414146;
+    font-size: 0.9rem;
+}
+
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details .doctor-info .fees {
+    padding-bottom: 10px;
+    border-bottom: dashed 1px #CCC;
+}
+
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details .doctor-info .doctor-page .likes {
+    border-radius: 3px;
+    background-color: #00A500;
+    color: #FFF;
+    padding: 2px 6px;
+}
+
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details .doctor-info .doctor-page .stories {
+    color: #000;
+    text-decoration: underline;
+}
+
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details .appointment-selection {
+    margin-left: 25px;
+}
+
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details .appointment-selection .appointment-available {
+    margin-top: 50px!important;
+    margin-bottom: 15px!important;
+    text-align: center;
+    font-size: 14px;
+}
+
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details .appointment-selection .book {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details .appointment-selection .booking-fee {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details .appointment-selection .book-appointment {
+    width: 100%;
+    height: 40px;
+    background-color: #14bef0;
+    border: solid 1px #14bef0;
+    border-radius: 3px;
+}
+
+#list-doctors #doctors .doctor-listing-cards .listing-card-doctor .doctor-details .appointment-selection .video {
+    border: solid 1px #ccc;
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    color: #14bef0;
+    font-weight: 700;
+}
+
+#location .map>img {
+    position: sticky;
+    height: 100%;
+    width: 500px;
+    bottom: 0;
+    top: 0;
+}
+
+#location .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#location .location-filter {
+    position: absolute;
+    top: 10px;
+    background-color: #FFF;
+    border-radius: 5px;
+    left: 10px;
+    right: 10px;
+}
+
+#location .location-filter .location-details {
+    padding: 15px 15px;
+}
+
+#location .location-filter .heading {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+#location .location-filter .sub-heading {
+    font-size: 14px;
+    color: #787887;
+    line-height: 12px;
+}
+
+#location .location-filter .locality {
+    border: solid 1px #CCC;
+    margin: 2px;
+}
+
+#location .location-filter .search {
+    color: #14bef0;
+    font-weight: 800;
+}
+
+#location .location-filter .current {
+    background-color: #14bef0;
+    border: solid 1px #14bef0;
+    border-radius: 3px;
+    color: #FFF;
+}
+
+#location-filter #city-search {
+    width: 100%;
+    border: transparent;
+}
+
+#location-filter #city-search:focus {
+    outline: none;
+}
+
+#location-filter #speciallity-search {
+    width: 100%;
+    border: transparent;
+}
+
+#location-filter #speciallity-search:focus {
+    outline: none;
+}
+
+#location-filter .city-wrapper {
+    border: 1px solid #ccc;
+    line-height: .5rem;
+}
+
+#location-filter .city-wrapper>* {
+    padding: .3rem;
+}
+
+#location-filter .speciallity-wrapper {
+    border: 1px solid #ccc;
+}
+
+#location-filter .speciallity-wrapper>* {
+    padding: .3rem;
+}

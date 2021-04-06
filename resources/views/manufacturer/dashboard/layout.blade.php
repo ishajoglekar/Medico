@@ -107,7 +107,6 @@
 
   <script>
         var id = {{auth()->id()}}
-        alert(id);
         Echo.private(`notify.${id}`)
         .listen('NotificationEvent',(e)=>{
             console.log("hii");

@@ -55,7 +55,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
-                <img src="{{asset('assets/images/logo/practo.svg')}}" alt="" style="width: 70%; margin:1rem">
+                <img src="{{asset('assets/images/logo/practo.png')}}" alt="" style="width: 70%; margin:1rem">
                 </div>
             </div>
         </div>

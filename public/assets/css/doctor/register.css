@@ -1,0 +1,13 @@
+body {
+    background: #fff;
+}
+
+.register-label {
+    /* height: 5px; */
+    border-bottom: solid 2px #007bff;
+}
+
+.illustration img {
+    width: 70%;
+    margin-top: 7rem;
+}

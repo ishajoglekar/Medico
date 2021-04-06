@@ -1,0 +1,24 @@
+.portfolio img{
+    padding-top:6%;
+  }
+  .portfolio h4{
+    font-size:24px;
+    font-weight:600;
+  }
+  
+  .portfolio .details{
+    padding-left:4%;
+    margin-top:3%;
+  }
+  .portfolio .sections{
+    margin-top:3rem;
+    color:#888;
+    font-size:12px;
+  }
+  .portfolio .green{
+    color:green;
+  }
+  .portfolio .btn{
+    padding:10px 45px;
+    border-radius:0;
+  }

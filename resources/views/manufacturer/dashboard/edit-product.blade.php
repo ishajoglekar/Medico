@@ -1,5 +1,5 @@
 @extends('manufacturer.dashboard.layout')
-@section('title','Practo | User')
+@section('title','Medico | User')
 @section('page-level-styles')
 <style>
 .card span{
@@ -160,7 +160,7 @@
 @section('scripts')
     <script>
         $("#image").change(function(event){
-            alert("hello");
+           
             if($("#pic").val() != ""){
                 console.log(event.target.files[0]);
                 var tmppath = URL.createObjectURL(event.target.files[0]);

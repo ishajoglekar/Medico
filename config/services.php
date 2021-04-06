@@ -30,4 +30,16 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'twilio' => [
+        // 'sid' => env('TWILIO_ACCOUNT_SID'),
+        // 'token' => env('TWILIO_ACCOUNT_TOKEN'),
+        // 'key' => env('TWILIO_API_KEY'),
+        // 'secret' => env('TWILIO_API_SECRET')
+
+        'sid' => 'ACdca59173b2435fc1e7abb09d5268adaf',
+        'token' => '59ca2162c1011105ddca28c9acbb6333',
+        'key' => 'SKb9ab424d08099d6bc8ccd26aec4317a2',
+        'secret' => 'kf5ghapmBevoTz6oPYKrlslk31fkFEzy'
+    ]
 ];
+

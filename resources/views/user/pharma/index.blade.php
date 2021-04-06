@@ -111,7 +111,7 @@
                 <img src="https://www.practostatic.com/consumer-home/desktop/images/1540464906/app-banner@2x.jpg" alt="" width="70%">
             </div>
             <div class="col-md-6 mt-5 pt-5">
-                <h3>Download the Practo app</h3>
+                <h3>Download the Medico app</h3>
                 <p>Your home for health is one tap away.</p>
                 <p>Book appointments, Order health products, Consult with a doctor online,<br>Book health chekups, store health records & read health tips.</p>
                 <p>Send the link to download the app</p>
@@ -129,14 +129,11 @@
 
 <div class="container-fluid" style="background: #28328C;margin-bottom:0">
     <div class="row">
-        <div class="col-md-12 d-flex justify-content-center">
-            <img src="//www.practostatic.com/ecommerce-assets/static/media/practo-footer.5fd476e2.svg" class="text-center" alt="" style="padding: 4rem;">
-        </div>
         <div class="col-md-12">
            <div class="text-center text-white">
-                <p>Copyright © 2017, Practo. All rights reserved <br>
-Consult now | Email: support@practo.com <br>
-Practo Technologies Pvt. Ltd., Salarpuria Symbiosis, Arekere Village, Begur Hobli, Bannerghatta Main Rd, Bengaluru, Karnataka 560076</p>
+                <p>Copyright © 2017, Medico. All rights reserved <br>
+Consult now | Email: support@medico.com <br>
+Medico Technologies Pvt. Ltd., Salarpuria Symbiosis, Arekere Village, Begur Hobli, Bannerghatta Main Rd, Bengaluru, Karnataka 560076</p>
             </div>
            </div>
     </div>

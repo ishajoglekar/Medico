@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Mirrored from www.practo.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Sep 2020 17:24:20 GMT -->
-<!-- Added by HTTrack -->
+
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
   <meta charset="utf-8" />
@@ -21,7 +20,7 @@
   <link href="{{asset('dashboard/lib/font-awesome/css/font-awesome.css')}}" rel="stylesheet"/>
   {{-- <link rel="stylesheet" href="{{asset('path/to/font-awesome/css/font-awesome.min.css')}}"> --}}
   <title>
-    Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests
+  Medico | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests
   </title>
   <meta name="description"
     content="Say Hello to India’s top doctors via video consultation, get digital prescriptions, order medicines, book doctor appointments &amp; lab tests, find doctors near you, get health packages, ask a free health question to doctors">
@@ -56,7 +55,7 @@
         @include('layouts.for-providers')
         @include('partials._header')
         <div class="banner"><a href="#"><span class="LazyLoad">
-            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/banner.png" alt="Download Practo App Banner" class="banner__img">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/banner.png" alt="Download Medico App Banner" class="banner__img">
         </span></a></div>
         <div class="">
           <div class="s-static">
@@ -89,7 +88,7 @@
             <div class="content content__padding">
               <div class="s-carousel__header">
                 <div>
-                  <h2 class="u-font--24 u-margin--0 u-font--bold c-header--offer">How Practo is Helping India Fight
+                  <h2 class="u-font--24 u-margin--0 u-font--bold c-header--offer">How Medico is Helping India Fight
                     COVID-19</h2>
                 </div>
                 <div class="cta">
@@ -476,7 +475,7 @@
                         <div>
                           <div class="card-testimonial">
                             <div class="testimony">Very easy to book,maintain history. Hassle free from older versions
-                              of booking appointment via telephone.. Thanks Practo for making it simple.</div>
+                              of booking appointment via telephone.. Thanks Medico for making it simple.</div>
                             <div class="u-margin--30__top"><i class="icon-ic_user_system user-icon"></i>
                               <div class="u-d__inline-block u-t-left u-v-middle u-margin--10__left">
                                 <div class="user-name">Jyothi Bhatia</div>
@@ -523,7 +522,7 @@
                         <div>
                           <div class="card-testimonial">
                             <div class="testimony">Very easy to book,maintain history. Hassle free from older versions
-                              of booking appointment via telephone.. Thanks Practo for making it simple.</div>
+                              of booking appointment via telephone.. Thanks Medico for making it simple.</div>
                             <div class="u-margin--30__top"><i class="icon-ic_user_system user-icon"></i>
                               <div class="u-d__inline-block u-t-left u-v-middle u-margin--10__left">
                                 <div class="user-name">Jyothi Bhatia</div>
@@ -575,7 +574,7 @@
           <div class="c-footer__wrapper">
             <div class="c-footer__content">
               <div class="c-footer__column">
-                <div data-qa-id="footer-heading" class="c-footer__title"><span>Practo</span></div>
+                <div data-qa-id="footer-heading" class="c-footer__title"><span>Medico</span></div>
                 <div><a data-qa-id="footer-item" target="_blank" class="c-footer__item" href="company/about.html"
                     rel=""><span>About</span></a><a data-qa-id="footer-item" target="_blank" class="c-footer__item"
                     href="http://blog.practo.com/" rel=""><span>Blog</span></a><a data-qa-id="footer-item"
@@ -595,45 +594,45 @@
                     data-qa-id="footer-item" target="_self" class="c-footer__item"
                     href="health-checkup-packages/master.html" rel=""><span>Book Full Body Checkups</span></a><a
                     data-qa-id="footer-item" target="_self" class="c-footer__item"
-                    href="plus367f.html?utm_source=consumer_home&amp;utm_medium=web" rel=""><span>Practo
+                    href="plus367f.html?utm_source=consumer_home&amp;utm_medium=web" rel=""><span>Medico
                       Plus</span></a><a data-qa-id="footer-item" target="_blank" class="c-footer__item"
                     href="healthfeed.html" rel=""><span>Read health articles</span></a><a data-qa-id="footer-item"
                     target="_blank" class="c-footer__item" href="medicine-info.html" rel=""><span>Read about
                       medicines</span></a><a data-qa-id="footer-item" target="_blank" class="c-footer__item"
-                    href="drive.html" rel=""><span>Practo drive</span></a><a data-qa-id="footer-item" target="_blank"
+                    href="drive.html" rel=""><span>Medico drive</span></a><a data-qa-id="footer-item" target="_blank"
                     class="c-footer__item" href="health-app.html" rel=""><span>Health app</span></a></div>
               </div>
               <div class="c-footer__column">
                 <div class="c-footer__row">
                   <div data-qa-id="footer-heading" class="c-footer__title"><span>For doctors</span></div>
                   <div><a data-qa-id="footer-item" target="_blank" class="c-footer__item"
-                      href="providers/doctors/profile.html" rel=""><span>Practo Profile</span></a></div>
+                      href="providers/doctors/profile.html" rel=""><span>Medico Profile</span></a></div>
                 </div>
                 <div class="c-footer__row">
                   <div data-qa-id="footer-heading" class="c-footer__title"><span>For clinics</span></div>
                   <div><a data-qa-id="footer-item" target="_blank" class="c-footer__item"
-                      href="providers/clinics/ray.html" rel=""><span>Ray by Practo</span></a><a data-qa-id="footer-item"
-                      target="_blank" class="c-footer__item" href="providers/clinics/reach.html" rel=""><span>Practo
+                      href="providers/clinics/ray.html" rel=""><span>Ray by Medico</span></a><a data-qa-id="footer-item"
+                      target="_blank" class="c-footer__item" href="providers/clinics/reach.html" rel=""><span>Medico
                         Reach</span></a><a data-qa-id="footer-item" target="_blank" class="c-footer__item"
                       href="providers/clinics/ray/features.html#rayTab" rel=""><span>Ray Tab</span></a><a
                       data-qa-id="footer-item" target="_blank" class="c-footer__item" href="practo-pro-app.html"
-                      rel=""><span>Practo Pro</span></a></div>
+                      rel=""><span>Medico Pro</span></a></div>
                 </div>
               </div>
               <div class="c-footer__column">
                 <div data-qa-id="footer-heading" class="c-footer__title"><span>For hospitals</span></div>
                 <div><a data-qa-id="footer-item" target="_blank" class="c-footer__item"
-                    href="providers/hospitals/insta.html" rel=""><span>Insta by Practo</span></a><a
+                    href="providers/hospitals/insta.html" rel=""><span>Insta by Medico</span></a><a
                     data-qa-id="footer-item" target="_blank" class="c-footer__item"
-                    href="providers/hospitals/qikwell.html" rel=""><span>Qikwell by Practo</span></a><a
+                    href="providers/hospitals/qikwell.html" rel=""><span>Qikwell by Medico</span></a><a
                     data-qa-id="footer-item" target="_blank" class="c-footer__item"
-                    href="providers/hospitals/querent.html" rel=""><span>Querent by Practo</span></a><a
+                    href="providers/hospitals/querent.html" rel=""><span>Querent by Medico</span></a><a
                     data-qa-id="footer-item" target="_blank" class="c-footer__item"
-                    href="providers/hospitals/profile.html" rel=""><span>Practo Profile</span></a><a
+                    href="providers/hospitals/profile.html" rel=""><span>Medico Profile</span></a><a
                     data-qa-id="footer-item" target="_blank" class="c-footer__item"
-                    href="providers/hospitals/reach.html" rel=""><span>Practo Reach</span></a><a
+                    href="providers/hospitals/reach.html" rel=""><span>Medico Reach</span></a><a
                     data-qa-id="footer-item" target="_blank" class="c-footer__item" href="https://drive.practo.com/"
-                    rel=""><span>Practo Drive</span></a></div>
+                    rel=""><span>Medico Drive</span></a></div>
               </div>
               <div class="c-footer__column">
                 <div data-qa-id="footer-heading" class="c-footer__title"><span>More</span></div>
@@ -645,7 +644,7 @@
                     href="company/terms.html" rel=""><span>Terms &amp; Conditions</span></a><a data-qa-id="footer-item"
                     target="_blank" class="c-footer__item" href="sitemap.html" rel=""><span>Healthcare
                       Directory</span></a><a data-qa-id="footer-item" target="_blank" class="c-footer__item"
-                    href="health-wiki/index.html" rel=""><span>Practo Health Wiki</span></a><a data-qa-id="footer-item"
+                    href="health-wiki/index.html" rel=""><span>Medico Health Wiki</span></a><a data-qa-id="footer-item"
                     target="_blank" class="c-footer__item" href="plus/corporate.html" rel=""><span>Corporate
                       Wellness</span></a></div>
               </div>
@@ -663,7 +662,7 @@
               </div>
             </div>
             <div class="c-footer__copyright"><span class="LazyLoad"></span>
-              <div class="c-copyright"><span>Copyright © 2017, Practo. </span><span>All rights reserved.</span></div>
+              <div class="c-copyright"><span>Copyright © 2017, Medico. </span><span>All rights reserved.</span></div>
             </div>
           </div>
         </footer>
@@ -721,6 +720,5 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.practo.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Sep 2020 17:24:44 GMT -->
 
 </html>

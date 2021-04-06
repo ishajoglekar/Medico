@@ -2,14 +2,15 @@
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
+
           <li class="mt">
-            <a class="active" href="">
+            <a  href="{{route('user.appointments.index')}}">
               <i class="fa fa-user"></i>
               <span>Medical Records</span>
               </a>
           </li>
           <li>
-            <a href="{{route('user.appointments.index')}}">
+            <a class = "active" href="{{route('user.appointments.index')}}">
               <i class="fa fa-book"></i>
               <span>Appointments</span>
             </a>
@@ -26,7 +27,7 @@
                 <span>Orders</span>
             </a>
           </li>
-          <li>
+          <!-- <li>
             <a  href="">
               <i class="fa fa-book"></i>
               <span>Online Consultations</span>
@@ -49,7 +50,7 @@
                 <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
                 <span>Payments</span>
             </a>
-          </li>
+          </li> -->
         </ul>
         <!-- sidebar menu end-->
       </div>

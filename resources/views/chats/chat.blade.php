@@ -1,5 +1,5 @@
 @extends('layouts.chat')
-@section('title','Practo | Doctor Dashboard')
+@section('title','Medico | Doctor Dashboard')
 
 @section('content')
 

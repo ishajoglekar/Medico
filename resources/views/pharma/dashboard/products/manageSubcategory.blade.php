@@ -1,5 +1,5 @@
 @extends('pharma.dashboard.layout')
-@section('title','Practo | Pharma Dashboard')
+@section('title','Medico | Pharma Dashboard')
 @section('dashboard-title')
 Products of Subcategory : {{$products[0]->subcategory->name}}
 @endsection

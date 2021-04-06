@@ -1,0 +1,61 @@
+#index-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #fff;
+}
+
+#index-nav .head {
+    font-weight: 600;
+    color: #2d2d32;
+    font-size: .9rem;
+    padding-bottom: .2rem;
+    margin-bottom: 0;
+}
+
+#index-nav .left {
+    display: flex;
+    flex: .5fr 6fr;
+}
+
+#index-nav .light-font {
+    font-weight: 400;
+    color: #787887;
+    font-size: .8rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#nav-sections a {
+    text-decoration: none;
+}
+
+#nav-sections .active {
+    position: relative;
+}
+
+#nav-sections .active::after {
+    position: absolute;
+    bottom: -1rem;
+    content: " ";
+    padding: .15rem;
+    width: 98%;
+    left: .5rem;
+    background-color: #14bef0;
+}
+
+#nav-settings>* {
+    cursor: pointer;
+}
+
+.nav-login-btn {
+    border: 1px solid #aaa;
+    max-height: 2rem;
+    max-width: 100%;
+    padding: .2rem .4rem;
+}

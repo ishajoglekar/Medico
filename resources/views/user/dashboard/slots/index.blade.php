@@ -1,5 +1,5 @@
 @extends('user.dashboard.layout')
-@section('title','Practo | User Dashboard')
+@section('title','Medico | User Dashboard')
 @section('dashboard-title','Your Slots')
 @section('main-content')
     <div class="" style="padding:10px;">

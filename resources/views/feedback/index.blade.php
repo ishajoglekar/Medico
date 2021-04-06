@@ -155,6 +155,7 @@ fieldset.rating.star > label:before {
                   <div class="form-group col-md-12">
                     <label for="inputName4">Name</label>
                     <input type="text" class="form-control" id="inputName4" placeholder="e.g John Doe">
+                    
                   <input type="hidden" value="{{$appointment_id}}" name="appointment_id">
                   </div>
 

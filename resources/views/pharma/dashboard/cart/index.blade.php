@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','Practo | Pharma Dashboard')
+@section('title','Medico | Pharma Dashboard')
 
 @section('styles')
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -136,7 +136,8 @@ a:hover{
         </div>
         @endforeach
 
-        <div class="btn btn-outline-primary">Add More Medicines</div>
+
+        <a href="{{route('pharma.index')}}" class="btn btn-outline-primary">Add More Medicines</a>
         <div class="container">
            <div class="row mt-5">
                <div class="col-md-12">

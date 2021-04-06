@@ -127,10 +127,9 @@
             function leave(){
 
 
-                // var id = {{$_GET['appointment_id']}};
-
-
-                var route="{{(auth()->user()->doctor_id != NULL) ? route('appointments.index') : route('feedback.index',$_GET['appointment_id'])}}";
+                
+                
+                var route=`{{(auth()->user()->doctor_id != NULL) ? route('appointments.index') : route('feedback.index',['id' => $_GET['appointment_id']])}}`;
                 location.replace(route);
             }
             function camera(){

@@ -1,5 +1,5 @@
 @extends('doctor.dashboard.layout')
-@section('title','Practo | Doctor Dashboard')
+@section('title','Medico | Doctor Dashboard')
 @section('dashboard-title','Profile')
 @section('page-level-styles')
 <link rel="stylesheet" href="{{asset('dashboard/css/dashboard-portfolio.css')}}">

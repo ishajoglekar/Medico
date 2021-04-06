@@ -3,7 +3,7 @@
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
 
-        <li class="sub-menu mt">
+        <li class="sub-menu mt active">
             <a href="{{route('manufacturer.requests')}}">
               <i class="fa fa-users"></i>
               <span>Manufacturers</span>

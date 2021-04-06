@@ -1,5 +1,5 @@
 @extends('user.dashboard.layout')
-@section('title','Practo | User')
+@section('title','Medico | User')
 @section('page-level-styles')
 <style>
 .card span{

@@ -1,5 +1,5 @@
 @extends('doctor.dashboard.layout')
-@section('title','Practo | Doctor Dashboard')
+@section('title','Medico | Doctor Dashboard')
 @section('dashboard-title','Establishment Details')
 @section('page-level-styles')
 <style>

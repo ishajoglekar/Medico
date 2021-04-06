@@ -1,5 +1,5 @@
 @extends('pharma.dashboard.layout')
-@section('title','Practo | Pharma Dashboard')
+@section('title','Medico | Pharma Dashboard')
 @section('dashboard-title','Add Subcategory')
 @section('main-content')
     <form action="{{route('subcategories.store')}}" method="POST">

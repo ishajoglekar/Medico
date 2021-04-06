@@ -1,0 +1,96 @@
+
+.bg-grey{
+    background-color: #CCC;
+}
+#appointment-details .details{
+    border-radius: 3px;
+    padding:2px 10px;
+}
+#appointment-details .appointment-type{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #CCC;
+}
+#appointment-details .time{
+    padding-top: 5px;
+}
+#appointment-details .time .date{
+    font-weight: 700;
+}
+
+#appointment-details .change-date-time{
+    color: #14bef0;
+    font-weight: 700;
+    font-size: 14px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #CCC;
+}
+#appointment-details .doctor-detail .doctor-image{
+    width: 100px;
+    max-height: 110px;
+    border-radius: 3px;
+}
+
+#appointment-details .doctor-detail .doctor-info {
+    padding-left: 20px;
+}
+#appointment-details .doctor-detail .doctor-info .doctor-name{
+    color: #787887;
+    font-weight: 700;
+    font-size: 16px;
+}
+#appointment-details .doctor-detail .doctor-info .doctor-degree,
+#appointment-details .doctor-detail .doctor-info .doctor-specialization{
+    color: #787887;
+    text-transform: capitalize;
+}
+
+#patient-info .patient-details{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+#patient-info .info{
+    color: #414146;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+#patient-info .checkbox .cb{
+    border: solid 1px #000;
+    background-color: #FFF;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 40px;
+}
+
+#patient-info .checkbox .cb1{
+    border: solid 1px #000;
+    border-top: none;
+    background-color: #FFF;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 40px;
+
+}
+
+#patient-info .user{
+    margin-top: 10px;
+}
+
+#patient-info .btn-confirm{
+    width: 100%;
+    background-color: #14bef0;
+    color: #FFF;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+#patient-info .tnc{
+    font-size: 10px;
+}

@@ -364,7 +364,7 @@
                                     International Sex & Health Clinics - Borivali West. However, due to COVID-19 for
                                     non-emergency cases, we would encourage <a class="u-t-link"
                                       href='dr-a-kumar-sexologist-680993a77.html?utm_source=organic&amp;utm_campaign=faq-profile'>online
-                                      consultation</a> on Practo.</span></span></p>
+                                      consultation</a> on Medico.</span></span></p>
                             </div>
                           </div>
                           <div class="u-separator u-spacer--vertical"></div>
@@ -376,10 +376,10 @@
                               <!-- -->How can I take Dr. A. Kumar&#x27;s appointment ?</p>
                             <div data-qa-id="faq-answer">
                               <p class="u-large-font u-normal-text u-cushion--vertical-thin"><span class="u-bold">A:
-                                </span><span><span>You can check for Dr. A. Kumar's availability on Practo. Due to
+                                </span><span><span>You can check for Dr. A. Kumar's availability on Medico. Due to
                                     COVID-19 for non-emergency cases, we would encourage to <a class="u-t-link"
                                       href='dr-a-kumar-sexologist-680993a77.html?utm_source=organic&amp;utm_campaign=faq-profile'>consult
-                                      your doctors online</a> through Practo.</span></span></p>
+                                      your doctors online</a> through Medico.</span></span></p>
                             </div>
                           </div>
                           <div class="u-separator u-spacer--vertical"></div>
@@ -395,7 +395,7 @@
                                     Premature Ejaculation, Treatment Of Erectile Dysfunction. To see more reasons
                                     visit the <a class="u-t-link"
                                       href='dr-a-kumar-sexologist-680993a77.html?utm_source=organic&amp;utm_campaign=faq-profile'>doctor's
-                                      profile</a> on Practo.</span></span></p>
+                                      profile</a> on Medico.</span></span></p>
                             </div>
                           </div>
                           <div class="u-separator u-spacer--vertical"></div>
@@ -410,7 +410,7 @@
                                 </span><span><span>Dr. A. Kumar has been recommended by 926 patients and has recieved
                                     stories from 353 patients. You can <a class="u-t-link"
                                       href='dr-a-kumar-sexologist-68099/reviews3a77.html?utm_source=organic&amp;utm_campaign=faq-profile'>read
-                                      detailed reviews</a> of the doctor on Practo.</span></span></p>
+                                      detailed reviews</a> of the doctor on Medico.</span></span></p>
                             </div>
                           </div>
                           <div class="u-separator u-spacer--vertical"></div>
@@ -425,7 +425,7 @@
                                 </span><span><span>Dr. A. Kumar has the following qualifications - MD - Alternate
                                     Medicine, BAMS. You can <a class="u-t-link"
                                       href='dr-a-kumar-sexologist-680993a77.html?utm_source=organic&amp;utm_campaign=faq-profile'>book
-                                      the doctor</a> through the doctor's profile on Practo.</span></span></p>
+                                      the doctor</a> through the doctor's profile on Medico.</span></span></p>
                             </div>
                           </div>
                         </div>
@@ -982,7 +982,7 @@
       <div class="o-page-container">
         <div class="u-spacer--medium-bottom">
           <div class="c-footer__column">
-            <div class="u-color--white u-base-font u-spacer--bottom-thin u-bold"><span>Practo</span></div>
+            <div class="u-color--white u-base-font u-spacer--bottom-thin u-bold"><span>Medico</span></div>
             <div>
               <div class="u-d-block"><a class="u-color--white u-d-block" target="_blank"
                   href="../../company/about.html"><span><span>About</span></span></a></div>
@@ -1008,11 +1008,11 @@
               <div class="u-d-block"><a class="u-color--white u-d-block" target="_blank"
                   href="../../medicine-info.html"><span><span>Read about medicines</span></span></a></div>
               <div class="u-d-block"><a class="u-color--white u-d-block" target="_blank"
-                  href="../../drive.html"><span><span>Practo drive</span></span></a></div>
+                  href="../../drive.html"><span><span>Medico drive</span></span></a></div>
               <div class="u-d-block"><a class="u-color--white u-d-block" target="_blank"
                   href="../../health-app.html"><span><span>Health app</span></span></a></div>
               <div class="u-d-block"><a class="u-color--white u-d-block" target="_blank"
-                  href="../../plus4082.html?utm_source=topaz&amp;utm_medium=web"><span><span>Practo
+                  href="../../plus4082.html?utm_source=topaz&amp;utm_medium=web"><span><span>Medico
                       Plus</span></span></a></div>
             </div>
           </div>
@@ -1020,22 +1020,22 @@
             <div class="u-spacer--bottom">
               <div class="u-color--white u-base-font u-spacer--bottom-thin u-bold"><span>For doctors</span></div>
               <div><a target="_blank" class="u-color--white u-d-block"
-                  href="../../providers/doctors/consult.html"><span><span>Practo Consult</span></span></a><a
+                  href="../../providers/doctors/consult.html"><span><span>Medico Consult</span></span></a><a
                   target="_blank" class="u-color--white u-d-block"
-                  href="../../providers/doctors/health-feed.html"><span><span>Practo Healthfeed</span></span></a><a
+                  href="../../providers/doctors/health-feed.html"><span><span>Medico Healthfeed</span></span></a><a
                   target="_blank" class="u-color--white u-d-block"
-                  href="../../providers/doctors/profile.html"><span><span>Practo Profile</span></span></a></div>
+                  href="../../providers/doctors/profile.html"><span><span>Medico Profile</span></span></a></div>
             </div>
             <div class="u-spacer--bottom">
               <div class="u-color--white u-base-font u-spacer--bottom-thin u-bold"><span>For clinics</span></div>
               <div><a target="_blank" class="u-color--white u-d-block"
-                  href="../../providers/prime.html"><span><span>Practo Prime</span></span></a><a target="_blank"
+                  href="../../providers/prime.html"><span><span>Medico Prime</span></span></a><a target="_blank"
                   class="u-color--white u-d-block" href="../../providers/clinics/ray.html"><span><span>Ray by
-                      Practo</span></span></a><a target="_blank" class="u-color--white u-d-block"
-                  href="../../providers/clinics/reach.html"><span><span>Practo Reach</span></span></a><a
+                  Medico</span></span></a><a target="_blank" class="u-color--white u-d-block"
+                  href="../../providers/clinics/reach.html"><span><span>Medico Reach</span></span></a><a
                   target="_blank" class="u-color--white u-d-block"
                   href="../../providers/clinics/ray/features.html#rayTab"><span><span>Ray Tab</span></span></a><a
-                  target="_blank" class="u-color--white u-d-block" href="../../practo-pro-app.html"><span><span>Practo
+                  target="_blank" class="u-color--white u-d-block" href="../../practo-pro-app.html"><span><span>Medico
                       Pro</span></span></a></div>
             </div>
           </div>
@@ -1043,16 +1043,16 @@
             <div class="u-color--white u-base-font u-spacer--bottom-thin u-bold"><span>For hospitals</span></div>
             <div>
               <div class="u-d-block"><a class="u-color--white u-d-block" target="_blank"
-                  href="../../providers/hospitals/insta.html"><span><span>Insta by Practo</span></span></a></div>
+                  href="../../providers/hospitals/insta.html"><span><span>Insta by Medico</span></span></a></div>
               <div class="u-d-block"><a class="u-color--white u-d-block" target="_blank"
-                  href="../../providers/hospitals/qikwell.html"><span><span>Qikwell by Practo</span></span></a></div>
+                  href="../../providers/hospitals/qikwell.html"><span><span>Qikwell by Medico</span></span></a></div>
               <div class="u-d-block"><a class="u-color--white u-d-block" target="_blank"
-                  href="../../providers/hospitals/querent.html"><span><span>Querent by Practo</span></span></a></div>
+                  href="../../providers/hospitals/querent.html"><span><span>Querent by Medico</span></span></a></div>
               <div class="u-d-block"><a class="u-color--white u-d-block" target="_blank"
-                  href="../../providers/hospitals/profile.html"><span><span>Practo Profile</span></span></a></div>
+                  href="../../providers/hospitals/profile.html"><span><span>Medico Profile</span></span></a></div>
               <div class="u-d-block"><a class="u-color--white u-d-block" target="_blank"
-                  href="../../providers/hospitals/reach.html"><span><span>Practo Reach</span></span></a></div>
-              <div class="u-d-block"><a class="u-color--white u-d-block" target="_blank" href="#"><span><span>Practo
+                  href="../../providers/hospitals/reach.html"><span><span>Medico Reach</span></span></a></div>
+              <div class="u-d-block"><a class="u-color--white u-d-block" target="_blank" href="#"><span><span>Medico
                       Drive</span></span></a></div>
             </div>
           </div>
@@ -1070,7 +1070,7 @@
               <div class="u-d-block"><a class="u-color--white u-d-block" target="_blank"
                   href="../../sitemap.html"><span><span>Healthcare Directory</span></span></a></div>
               <div class="u-d-block"><a class="u-color--white u-d-block" target="_blank"
-                  href="../../health-wiki/index.html"><span><span>Practo Health Wiki</span></span></a></div>
+                  href="../../health-wiki/index.html"><span><span>Medico Health Wiki</span></span></a></div>
             </div>
           </div>
           <div class="c-footer__column">
@@ -1091,8 +1091,8 @@
           </div>
         </div>
         <div class="u-t-center"><img class="u-spacer--medium-vertical"
-            src="https://www.practostatic.com/web-assets/images/white_practo_logo.svg" alt="practo logo" />
-          <div class="u-bold u-color--lavender-gray"><span>Copyright © 2017, Practo. </span><span>All rights
+            src="{{asset('assets/images/logo/practo.png')}}" />
+          <div class="u-bold u-color--lavender-gray"><span>Copyright © 2017, Medico. </span><span>All rights
               reserved</span>.</div>
         </div>
       </div>

@@ -1,0 +1,120 @@
+p{
+    margin: 0;
+}
+#search-navbar{
+    box-shadow: 0 6px 5px rgba(0,0,0,.035);
+    border: 1px solid #f0f0f5;
+}
+#filter-navbar{
+    box-shadow: 0 6px 5px rgba(0,0,0,.035);
+    border-bottom: 1px solid #e5e5f1;
+}
+#filter-navbar .category-sub-header{
+    width: 100%;
+}
+#filter-navbar .dropdown-toggle, .drop-link{
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+}
+#filter-navbar .category-dropdown:hover .dropdown-toggle{
+    text-decoration: none;
+    border: none!important;
+    color: #14BEF0;
+}
+#filter-navbar .category-dropdown:hover .drop-link{
+    text-decoration: none;
+    border: none!important;
+    color: #14BEF0;
+
+}
+
+#filer-navbar .dropdown-menu{
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+}
+.sub-categories .sub-category .main-sub-category{
+    padding: 10px 0 10px 20px;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-color: #f0f0f5;
+}
+.sub-categories .sub-category .list-sub-category{
+    padding: 0px 0 10px 40px;
+    border-bottom: 1px solid;
+    border-color: #f0f0f5;
+}
+.main-list-sub-category{
+    color: #000!important;
+    font-size: 12px;
+}
+.main-list-sub-category:hover{
+    text-decoration: none;
+}
+#title .category-title{
+    font-size: 32px;
+    font-weight: 700;
+}
+#title .product-quantity{
+    font-size: 14px;
+    font-weight: 400;
+}
+#best-sellers .title,
+#shop-by-category .title{
+    font-size: 20px;
+    font-weight: 700;
+}
+#shop-by-category .health .sub-category{
+    height: 120px;
+    /* width: 280px; */
+    border-radius: 5px;
+    background-color:#91D2AF;
+    color: #FFF;
+    padding: 5px;
+}
+#shop-by-category .health a{
+    color: #FFF;
+    font-size: 18px;
+}
+#shop-by-category .health a:hover{
+    text-decoration: none;
+}
+#shop-by-category .health .sub-category:hover{
+    background-color: #91EAAA;
+}
+#best-sellers .card .item-photo{
+    height: 200px;
+}
+#best-sellers .card .name{
+    color: #414146;
+    font-size: 14px;
+}
+#best-sellers .card .price{
+    font-size: 18px;
+    font-weight: 700;
+    color: #414146;
+    bottom: 35px;
+    position: absolute;
+}
+#best-sellers .card .buttons .size{
+    border: solid 1px #CCC;
+    width: 50%;
+}
+#best-sellers .card .buttons .add{
+    border: solid 1px #14BEF0;
+    width: 50%;
+    color: #14BEF0;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    vertical-align: middle;
+}
+#best-sellers .card{
+    border: none;
+    height: 340px;
+}
+#best-sellers .card:hover{
+    border-color: #f0f0f5;
+    box-shadow: 0 2px 15px 0 rgba(0,0,0,.1);
+    cursor: pointer;
+}

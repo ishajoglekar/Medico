@@ -103,7 +103,6 @@
   <script src="{{asset('dashboard/lib/zabuto_calendar.js')}}"></script>
   <script>
         var id = {{auth()->id()}}
-        alert(id);
         Echo.private(`notify.${id}`)
         .listen('NotificationEvent',(e)=>{
                 console.log("hii");

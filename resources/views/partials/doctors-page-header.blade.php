@@ -1,7 +1,7 @@
 <div id="index-nav">
     <div class="left">
         <div class="logo d-inline-block ">
-            <a href=""><img src="{{asset('assets/images/logo/practo.svg')}}" alt=""></a>
+            <a href=""><img src="{{asset('assets/images/logo/practo.png')}}" alt=""></a>
         </div>
         <div class="ml-3 d-inline-block" id="nav-sections">
             <a href="{{route('doctors.findDoctors')}}" class="active">

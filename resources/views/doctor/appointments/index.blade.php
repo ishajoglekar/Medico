@@ -1,5 +1,5 @@
 @extends('doctor.dashboard.layout')
-@section('title','Practo | Doctor Dashboard')
+@section('title','Medico | Doctor Dashboard')
 @section('dashboard-title','Your Appointments')
 @section('main-content')
     <div class="appointment-single-type-nav">
@@ -351,7 +351,7 @@
 
                         }else if(status == "pending"){
                             doctor_id = {{auth()->user()->doctor_id}};
-                            console.log(success[i]);
+                            // console.log(success[i][5]);
                             content += `<td class="d-flex">
                                             <a class='btn btn-danger btn-sm' href=""><i class='fa fa-trash' style="margin-right: 7px"></i>Cancel</a>
 

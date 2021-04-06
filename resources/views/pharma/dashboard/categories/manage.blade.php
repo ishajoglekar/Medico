@@ -1,5 +1,5 @@
 @extends('pharma.dashboard.layout')
-@section('title','Practo | Pharma Dashboard')
+@section('title','Medico | Pharma Dashboard')
 @section('dashboard-title','Manage Categories')
 @section('main-content')
 

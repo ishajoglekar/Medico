@@ -86,7 +86,7 @@
                             <div class="">
                                 <button type="submit" class="btn-confirm text-center">Confirm</button>
                             </div>
-                            <p class="tnc">By Booking this appointment you agree to Practo's Terms and condition</p>
+                            <p class="tnc">By Booking this appointment you agree to Medico's Terms and condition</p>
                         </form>
 
                     </div>
@@ -138,7 +138,7 @@
                             <div class="">
                                 <button type="submit" class="btn-confirm text-center">Confirm</button>
                             </div>
-                            <p class="tnc">By Booking this appointment you agree to Practo's Terms and condition</p>
+                            <p class="tnc">By Booking this appointment you agree to Medico's Terms and condition</p>
                         </form>
                         `
         );
@@ -193,7 +193,7 @@
                             <div class="">
                                 <button type="submit" class="btn-confirm text-center">Confirm</button>
                             </div>
-                            <p class="tnc">By Booking this appointment you agree to Practo's Terms and condition</p>
+                            <p class="tnc">By Booking this appointment you agree to Medico's Terms and condition</p>
                         </form>
                         `
                     );

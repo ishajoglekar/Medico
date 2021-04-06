@@ -1,0 +1,29 @@
+.bg-blue {
+    background: #28328C;
+}
+
+.bg-yellow {
+    background: #ccc;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.sent-message {
+    background: #28328C;
+    padding: .7rem;
+    margin: 1rem 0;
+    color: #fff;
+    width: 600px;
+    margin-left: 53%;
+    border-radius: 20px;
+}
+
+.recieved-message {
+    background: #ccc;
+    padding: .7rem;
+    margin: 1rem 0;
+    width: 600px;
+    border-radius: 20px;
+}
