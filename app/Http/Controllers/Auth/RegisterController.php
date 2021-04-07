@@ -185,20 +185,11 @@ class RegisterController extends Controller
 
     public function sendMessage($phone,$otp)
     {
-        // $account_sid = getenv('TWILIO_SID');
-        // $auth_token = getenv('TWILIO_AUTH_TOKEN');
-        // $twilio_number = getenv('TWILIO_NUMBER');
+        $account_sid = getenv('TWILIO_SID');
+        $auth_token = getenv('TWILIO_AUTH_TOKEN');
+        $twilio_number = getenv('TWILIO_NUMBER');
 
-        //Muskaan
-        // $account_sid = "AC1e544815c67bbbdfd0cfa6b799fbfa26";
-        // $auth_token = "bb730f8238c87ef826fa4d5c510b7e40";
-        // $twilio_number = "+1 830 243 5006";
-
-        //Ishaa
-        $account_sid = "AC2dd375893cd717da4f26f6e4c91f82d2";
-        $auth_token = "f10c945b2fdb098355932c009a608223";
-        $twilio_number = "+15743183454";
-
+  
         $client = new Client($account_sid, $auth_token);
         $client->messages->create('+91'.$phone,
                 ['from' => $twilio_number, 'body' => 'Registered!'.$otp] );
