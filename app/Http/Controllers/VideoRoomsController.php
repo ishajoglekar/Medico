@@ -19,10 +19,6 @@ class VideoRoomsController extends Controller
 
     public function __construct()
     {
-        // $this->sid = config('services.twilio.sid');
-        // $this->token = config('services.twilio.token');
-        // $this->key = config('services.twilio.key');
-        // $this->secret = config('services.twilio.secret');
 
 
         $this->sid = 'ACdca59173b2435fc1e7abb09d5268adaf';
@@ -37,10 +33,9 @@ class VideoRoomsController extends Controller
             $client = new Client($this->sid, $this->token);
             $allRooms = $client->video->rooms->read([]);
 
-                $rooms = array_map(function($room) {
+            $rooms = array_map(function ($room) {
                 return $room->uniqueName;
-                }, $allRooms);
-
+            }, $allRooms);
         } catch (Exception $e) {
             echo "Error: " . $e->getMessage();
         }
@@ -50,8 +45,8 @@ class VideoRoomsController extends Controller
     {
         $client = new Client($this->sid, $this->token);
         $appointment = Appointment::find($request->appointment_id);
-        $appointment->update(['status'=>'active']);
-        $exists = $client->video->rooms->read([ 'uniqueName' => $request->roomName]);
+        $appointment->update(['status' => 'active']);
+        $exists = $client->video->rooms->read(['uniqueName' => $request->roomName]);
 
         if (empty($exists)) {
             $client->video->rooms->create([
@@ -60,9 +55,9 @@ class VideoRoomsController extends Controller
                 'recordParticipantsOnConnect' => false
             ]);
 
-            \Log::debug("created new room: ".$request->roomName);
+            \Log::debug("created new room: " . $request->roomName);
         }
-        if($request->roomName){
+        if ($request->roomName) {
             $arr = [];
             $arr[] = $request->user_id;
             $arr[] = $request->roomName;
@@ -72,13 +67,14 @@ class VideoRoomsController extends Controller
             'roomName' => $request->roomName
         ]);
     }
-    public function join(Request $request){
+    public function join(Request $request)
+    {
         return redirect()->action('VideoRoomsController@joinRoom', [
             'roomName' => $request->room,
-            'appointment_id'=>$request->appointment_id
+            'appointment_id' => $request->appointment_id
         ]);
     }
-    public function joinRoom($roomName,$appointment_id=0)
+    public function joinRoom($roomName, $appointment_id = 0)
     {
         // A unique identifier for this user
         $identity = auth()->user()->name;
@@ -91,6 +87,6 @@ class VideoRoomsController extends Controller
 
         $token->addGrant($videoGrant);
 
-        return view('video.room', [ 'accessToken' => $token->toJWT(), 'roomName' => $roomName ,'appointment_id'=> $appointment_id]);
+        return view('video.room', ['accessToken' => $token->toJWT(), 'roomName' => $roomName, 'appointment_id' => $appointment_id]);
     }
 }
