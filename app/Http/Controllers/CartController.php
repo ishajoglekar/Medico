@@ -15,10 +15,12 @@ class CartController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+   /*
+   */
+
     public function index()
     {
-        // $cart = Cart::where('user_id',auth()->user()->id)->first();
-        // dd(auth()->user()->id);
+        
         $cart = auth()->user()->cart;
         
         if(!$cart){
@@ -27,12 +29,10 @@ class CartController extends Controller
             ]);
         }
         $products = $cart->products;
-        // dd($cart);
-        // dd($products);
-        // dd($cart->products);
+       
         $finalAmount=0;
         foreach($products as $product){
-            // dd($product->pivot->quantity);
+
             $finalAmount += ($product->price * $product->pivot->quantity);
         }
         return view('pharma.dashboard.cart.index',compact([
