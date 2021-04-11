@@ -516,14 +516,12 @@
             });
         }
 
-        function leave() {
-
-
-
-
+        function leave(){
             var route = `{{(auth()->user()->doctor_id != NULL) ? route('appointments.index') : route('feedback.index',['id' => $_GET['appointment_id']])}}`;
             location.replace(route);
         }
+
+        /*Utility Functions */
 
         function camera() {
 

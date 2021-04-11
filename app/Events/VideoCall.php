@@ -22,7 +22,8 @@ class VideoCall implements ShouldBroadcast
     public $message;
     public function __construct($message)
     {
-        $this->message = $message;
+        $this->message = $message; 
+    
     }
 
     /**
@@ -33,5 +34,6 @@ class VideoCall implements ShouldBroadcast
     public function broadcastOn()
     {
         return new PrivateChannel('call.'.$this->message[0]);
+        //New private channel for video calling
     }
 }

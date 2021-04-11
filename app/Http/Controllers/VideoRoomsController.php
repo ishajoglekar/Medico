@@ -20,6 +20,8 @@ class VideoRoomsController extends Controller
     public function __construct()
     {
 
+        //Detials for Video Calling
+
 
         $this->sid = 'ACdca59173b2435fc1e7abb09d5268adaf';
         $this->token = '59ca2162c1011105ddca28c9acbb6333';
