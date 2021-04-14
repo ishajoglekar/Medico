@@ -27,9 +27,9 @@ class DynamicPDFController extends Controller
             'report_pdf' => $fn
         ]);
 
-        // dd(Notification_type::all());
+        
         $type = Notification_type::where("name", "prescription")->first();
-        // dd($type);
+
         if (!$type) {
             $notification = $type->notifications()->create([
                 'from' => auth()->id(),
