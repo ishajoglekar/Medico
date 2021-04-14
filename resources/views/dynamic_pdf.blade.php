@@ -15,7 +15,7 @@
  <body>
   <br />
   <div class="container">
-   <h3 align="center">Laravel - How to Generate Dynamic PDF from HTML using DomPDF</h3><br />
+   
    
    <div class="row">
     <div class="col-md-7" align="right">
