@@ -25,11 +25,11 @@ class UpdateUserRequest extends FormRequest
     {
         return [
             'name'=>'required',
-            'email'=>'required|unique:users,email,'.auth()->id(),
+            // 'email'=>'required|unique:users,email,'.auth()->id(),
             'password'=>'required',
             'gender'=>'required',
             'age'=>'required',
-            'phone_no'=>'required|unique:users,phone_no,'.auth()->id(),
+            // 'phone_no'=>'required|unique:users,phone_no,'.auth()->id(),
         ];
     }
 }

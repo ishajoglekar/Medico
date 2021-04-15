@@ -114,7 +114,7 @@ class PharmaciesController extends Controller
             }
         }
 
-        dd($productDetails);
+        // dd($productDetails);
         return view('user.dashboard.orders.index', compact([
             'productDetails'
         ]));
