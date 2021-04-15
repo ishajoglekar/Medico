@@ -79,7 +79,8 @@
                             @foreach ($products as $product)
                             <div class="col-md-4 mt-2">
                                 <a href="{{route('product.show',$product->id)}}" class="card p-2">
-                                    <img class="item-photo" src="//www.practostatic.com/ecommerce-assets/static/media/placeholder_product.39dd65c8.png" alt="">
+         
+                                    <img class="item-photo" src="{{($product->image == null) ? '//www.practostatic.com/ecommerce-assets/static/media/placeholder_product.39dd65c8.png' : asset('storage/'.$product->image)}}" alt="">
                                     <p class="name">{{$product->name}}</p>
                                     <p class="price pt-2 pb-2">₹ {{$product->price}}</p>
                                 </a>

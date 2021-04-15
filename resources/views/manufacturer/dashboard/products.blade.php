@@ -29,6 +29,7 @@
 @endsection
 @section('dashboard-title'.'My profile')
 @section('main-content')
+
 <div class="card" style="margin-top:3%">
     <div class="card-body">
         <table class="table table-bordered adv-table" id="manage-product-table">
@@ -45,7 +46,8 @@
                 $i=1;
                 @endphp
                 @foreach($products as $product)
-                @if($product->status == "accepted")
+                
+                @if($product->status == "accept")
                 <tr>
                     <td>
                         {{$i++}}

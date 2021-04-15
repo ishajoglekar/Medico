@@ -53,7 +53,7 @@
                     <div class="personal-info">
                         <form action="{{route('doctors.bookPersonalAppointment',[$doctor->id,$slot->id])}}" method="POST">
                             @csrf
-                            <input type="hidden" name="type_id" value="{{$type == "clinic" ? 3: 1}}">
+                            <input type="hidden" name="type_id" value="{{$type == 'clinic' ? 3: 1}}">
                             <p class="mb-1 info">Please provide the following information about user:</p>
                             <div class="form-group m-1">
                                 <label for="inputAddress">Name</label>

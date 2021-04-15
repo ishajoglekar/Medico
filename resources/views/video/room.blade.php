@@ -433,11 +433,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="//media.twiliocdn.com/sdk/js/video/v1/twilio-video.min.js"></script>
     <script>
-        var id = {
-            {
-                auth() - > user() - > id
-            }
-        };
+        var id = {{auth()->user()->id}};
         var audio = false;
         var video = true;
         if (id == 1) {

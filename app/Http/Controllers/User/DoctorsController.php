@@ -258,6 +258,7 @@ class DoctorsController extends Controller
         return view('user.findDoctor.confirmAppointment',compact(['doctor','slot','degree','speciality','type']));
     }
     public function bookOthersAppointment(doctor $doctor,Slot $slot,BookOthersAppointmentRequest $request){
+    //    dd($request);
         $this->bookAppointment($doctor,$slot,$request);
         return redirect(route('doctors.show',$doctor->id));
 
@@ -273,7 +274,7 @@ class DoctorsController extends Controller
         // dd($request);
         $data = [
             'doctor_id' => $doctor->id,
-            'reason' => $request->reason,
+            'reason' => isset($request->reason) ? $request->reason : $request->patient_reason ,
             'type_id' => $request->type_id,
             'slot_id'=>$slot->id,
             'user_id'=>auth()->user()->id

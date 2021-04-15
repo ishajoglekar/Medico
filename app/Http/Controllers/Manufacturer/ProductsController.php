@@ -15,6 +15,7 @@ class ProductsController extends Controller
 {
     public function index()
     {
+        // dd(auth()->user()->manufacturer->products);
         $products = auth()->user()->manufacturer->products;
         return view('manufacturer.dashboard.products', compact(['products']));
     }
@@ -31,7 +32,7 @@ class ProductsController extends Controller
         if ($request->file('pic')) {
             $image = $request->file('pic')->store('product');
         }
-        Product::create([
+        $p = Product::create([
             'name' => $request->name,
             'size' => $request->size,
             'price' => $request->price,
@@ -46,6 +47,8 @@ class ProductsController extends Controller
             'image' => $image,
             'manufacturer_id' => $manufacturer->id
         ]);
+
+        // dd(Product::where('name','product4'))->get();
 
         $type = Notification_type::where("name", "product-request")->first();
         $userPharma = User::where("role", "pharma")->first();
