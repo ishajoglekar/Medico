@@ -135,16 +135,19 @@ class CartController extends Controller
     }
 
     public function placeOrder(Request $request){
+        // dd($request);
         $coupon = Coupon::where('code',$request->coupon)->first();
         $reason = 'Order Placed!';
         if($coupon){
+            // dd($coupon->id);//
+            // dd(auth()->user()->coupons());
              auth()->user()->coupons()->attach($coupon->id);
              $reason ='Order Placed with Coupons!';
             //  return json_encode(['reason'=>'Order Placed with Coupons!']);
         }
         $cart = Cart::where('user_id',auth()->user()->id)->first();
 
-        // dd($cart);
+        // dd(auth()->user()->id);
         $products = $cart->products;
          $order = Order::create([
             'user_id'=>auth()->user()->id,
@@ -152,6 +155,7 @@ class CartController extends Controller
             'billing_name'=>auth()->user()->name,
             'email'=>auth()->user()->email,
         ]);
+        
         foreach($products as $product){
 
             auth()->user()->products()->attach($product->id,['count'=>$product->pivot->quantity,'order_id'=>$order->id]);

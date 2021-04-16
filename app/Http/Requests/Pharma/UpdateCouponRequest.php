@@ -23,9 +23,10 @@ class UpdateCouponRequest extends FormRequest
      */
     public function rules()
     {
+        // dd($this->coupon);
         return [
             'valid_till'=>'required',
-            'code'=>'required|unique:coupons,code,'. $this->code->id
+            'code'=>'required|unique:coupons,code,'. $this->coupon->id
         ];
     }
 }

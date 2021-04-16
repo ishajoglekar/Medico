@@ -17,8 +17,8 @@ class CreateCouponsTable extends Migration
             $table->id();
             $table->unsignedBigInteger("min_amount")->nullable();
             $table->string("code")->unique();
-            $table->unsignedBigInteger("discount");
-            $table->unsignedBigInteger("upto");
+            $table->unsignedBigInteger("max_discount");
+            $table->unsignedBigInteger("upto")->nullable();
             $table->timestamp("valid_till");
             $table->timestamps();
         });

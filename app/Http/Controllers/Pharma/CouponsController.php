@@ -33,18 +33,20 @@ class CouponsController extends Controller
 
     public function store(CreateCouponRequest $request)
     {
+        // dd($request->valid_till);
         $coupon = Coupon::create([
             'code'=>$request->code,
             'min_amount'=>$request->min_amount,
             'valid_till'=>$request->valid_till,
-            'max_discount'=>$request->max_discount
+            'max_discount'=>$request->max_discount,
+            'upto'=>$request->upto
         ]);
         return redirect()->route('coupons.index');
     }
 
     public function update(UpdateCouponRequest $request, Coupon $coupon)
     {
-        $data = $request->only(['code','min_amount','max_discount','valid_till']);
+        $data = $request->only(['code','min_amount','max_discount','upto','valid_till']);
         $coupon->update($data);
         session()->flash('success','Coupon Updated Successfully!');
         return redirect(route('coupons.index'));
@@ -59,7 +61,7 @@ class CouponsController extends Controller
             if($user){
                 return json_encode(['status'=>false,'reason'=>'Coupon already used!']);
             }
-            // auth()->user()->coupons()->attach($presentCoupon->id);
+            auth()->user()->coupons()->attach($presentCoupon->id);
             if($request->amount>=$presentCoupon->min_amount){
                 session()->put('coupon',$presentCoupon->code);
                 return json_encode(['status'=>true,'coupon'=>$presentCoupon]);

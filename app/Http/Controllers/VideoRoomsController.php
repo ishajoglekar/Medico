@@ -19,16 +19,10 @@ class VideoRoomsController extends Controller
 
     public function __construct()
     {
-        // $this->sid = config('services.twilio.sid');
-        // $this->token = config('services.twilio.token');
-        // $this->key = config('services.twilio.key');
-        // $this->secret = config('services.twilio.secret');
-
-
-        $this->sid = 'ACdca59173b2435fc1e7abb09d5268adaf';
-        $this->token = '2c220ee43afa62669f5051d800537e37';
-        $this->key = 'SKb9ab424d08099d6bc8ccd26aec4317a2';
-        $this->secret = 'kf5ghapmBevoTz6oPYKrlslk31fkFEzy';
+        $this->sid = config('services.twilio.sid');
+        $this->token = config('services.twilio.token');
+        $this->key = config('services.twilio.key');
+        $this->secret = config('services.twilio.secret');
     }
     public function index()
     {

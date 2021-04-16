@@ -120,74 +120,7 @@ class UsersController extends Controller
             'specialities', 'count'
         ]));
     }
-    /*public function bookChatAppointment(Request $request){
-        $appointment = Appointment::find($request->appointment_id);
-        $alreadyAssigned = ChatTemp::where('appointment_id',$request->appointment_id)->get();
-        $onlinedocs = [];
-        if(count($alreadyAssigned) >= 2){
-            dd("Busy"); //user side
-        }
-        if(!empty($alreadyAssigned)){
-            $newArr = [] ;
-            foreach($alreadyAssigned as $doc){
-                $newArr[] = ['doctor_id','!=',$doc->doctor_id];
-            }
-            $onlinedocs = OnlineDoctor::where($newArr)->get();
-        }
-        else{
-            $onlinedocs = OnlineDoctor::all();
-        }
-        $doctors=[];
-        $randomDoctor = NULL;
-
-
-        foreach($onlinedocs as $onlinedoc)
-        {
-
-            if($onlinedoc->doctor->speciality_id == $request->speciality_id){
-                $doctors[] = $onlinedoc->doctor;
-            }
-            else if($onlinedoc->doctor->speciality_id == auth()->user()->doctor->speciality_id){
-                $try = $onlinedoc->doctor;
-                if($try != Null)
-                $doctors[] = $try;
-            }
-
-        }
-        if(count($doctors) > 0)
-            $randomDoctor = $doctors[rand(0,count($doctors) - 1)];
-
-
-        if(auth()->user()->doctor_id != NULL){
-
-            $appointment->update(['doctor_id'=>$randomDoctor->id]);
-            $appointment->save();
-            $temp = ChatTemp::create([
-                'doctor_id'=>$randomDoctor->id,
-                'appointment_id'=>$request->appointment_id
-            ]);
-        }
-        else{
-            $appointment = Appointment::create([
-                'type_id' => 2,
-                'reason' => $request->reason,
-                'user_id' => auth()->id(),
-                'doctor_id' => $randomDoctor->id,
-                'chat_duration' => now()->addDays(1)
-            ]);
-            $temp = ChatTemp::create([
-                'doctor_id'=>$randomDoctor->id,
-                'appointment_id'=>$appointment->id
-            ]);
-        }
-
-
-        return view('home.index');
-
-
-
-    }*/
-
+    
     public function bookChatAppointment(Request $request)
     {
 
@@ -296,7 +229,9 @@ class UsersController extends Controller
     {
         // $ip = \Request::ip();
         $ip = '43.231.238.110';
+        
         $data = \Location::get($ip);
+        dd($ip);
         return json_encode($data->cityName);
     }
 }

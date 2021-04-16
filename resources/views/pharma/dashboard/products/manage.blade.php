@@ -14,6 +14,7 @@
                 <th>Description</th>
                 <th>Category</th> 
                 <th>Subcategory</th>
+                <th>Manufacturer</th>
                 <th>Actions</th>
             </thead>
             <tbody>
@@ -41,6 +42,9 @@
                             @else
                                 -
                             @endif
+                        </td>
+                        <td>
+                        {{$product->manufacturer->name}}
                         </td>
                         <td>
                             @if($product->status == "pending" )

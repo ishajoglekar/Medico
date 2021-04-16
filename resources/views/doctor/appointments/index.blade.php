@@ -342,6 +342,7 @@
                             if(!success[i][0].report_pdf){
                                 content += `<td class="d-flex">
                                             <a id="generate-btn" data-id="${success[i][0].id}" class='btn btn-primary btn-sm' href="#" data-toggle="modal" data-target="#pdf-modal"><i class="fa fa-check" style="margin-right: 7px"></i>Generate</a>
+                                            
                                         </td>`;
                             }else{
                                 content += `<td class="d-flex">

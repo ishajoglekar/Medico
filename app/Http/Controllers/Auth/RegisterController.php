@@ -111,7 +111,7 @@ class RegisterController extends Controller
         session()->put('age',$request->age);
         session()->put('company_name',$request->company_name);
         // session()->put('role',$request->role);
-        // $this->sendMessage($otp->phone,$randomNumber);
+        $this->sendMessage($otp->phone,$randomNumber);
         return redirect()->back();
     }
 
@@ -189,10 +189,15 @@ class RegisterController extends Controller
         $auth_token = getenv('TWILIO_AUTH_TOKEN');
         $twilio_number = getenv('TWILIO_NUMBER');
 
+        
+        // $account_sid = 'AC2dd375893cd717da4f26f6e4c91f82d2';
+        // $auth_token = 'd6340fa0e18768e30447f76adb4ef1a9';
+        // $twilio_number = '+15743183454';
+
   
         $client = new Client($account_sid, $auth_token);
         $client->messages->create('+91'.$phone,
-                ['from' => $twilio_number, 'body' => 'Registered!'.$otp] );
+                ['from' => $twilio_number, 'body' => 'Registered! Your OTP is: '.$otp] );
     }
 
     public function verifyotp(Request $request){
