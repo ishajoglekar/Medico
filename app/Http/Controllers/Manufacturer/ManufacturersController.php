@@ -108,6 +108,7 @@ class ManufacturersController extends Controller
 
     public function storeManufacturer(StoreManufacturerRequest $request)
     {
+        // dd($request);
         $user = User::find(auth()->id());
 
         $type = Notification_type::where("name","manufacturer-request")->first();
@@ -130,6 +131,7 @@ class ManufacturersController extends Controller
         $user->update([
             'role' => 'temp_manufacturer'
         ]);
+
         Manufacturer::create([
             'name' => $request->company_name,
             'user_id' => $user->id

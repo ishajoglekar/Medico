@@ -119,7 +119,7 @@
             console.log(e.message[1].message);
             $("#doc-nav-notification").prepend(`
                 <li>
-                    <a href="dashboard/pharma/manufacturerRequest">
+                    <a href="dashboard/pharma/supplierRequest">
                         <span class="label label-danger"><i class="fa fa-bolt"></i></span>
                         ${e.message[1].message}${e.message[2]}
                     </a>

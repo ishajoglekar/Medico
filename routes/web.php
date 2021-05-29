@@ -7,8 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Product;
 use App\User;
 use Illuminate\Http\Request;
-
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -102,6 +101,19 @@ Route::get('/dashboard/doctor', function () {
     ]));
 })->name('doctor.dashboard');
 
+
+Route::get('/dashboard/doctor/medicalReports', function () {
+    $section = "medicalReports";
+    $id = auth()->user()->doctor->id;
+    // dd($id); 
+    $tests = DB::select("SELECT * FROM tests WHERE id in(select test_id from users_tests where user_id in(select user_id from appointments where doctor_id = $id))");
+    // $users = DB::select("SELECT * FROM users where id in (select user_id from users_tests where test_id in (SELECT test_id FROM tests WHERE id in(select test_id from users_tests where user_id in(select user_id from appointments where doctor_id = $id))))");
+    return view('doctor.dashboard.medicalTestReports', compact([
+        'section',
+        'tests',
+    ]));
+})->name('doctor.medicalReports');
+
 /*Slots*/
 Route::get('dashboard/doctor/slots/{SlotDate}/edit', 'Doctor\SlotsController@edit')->name('slot.edit');
 Route::resource('dashboard/doctor/slots', 'Doctor\SlotsController')->except('edit', 'update', 'destroy');
@@ -189,6 +201,9 @@ Route::resource('document', 'User\MedicalRecordsController');
 Route::post('document/updateData', 'User\MedicalRecordsController@updateData')->name('document.updateData');
 Route::delete('document/destroyDocument/{medicalrecord}', 'User\MedicalRecordsController@destroyDocument')->name('document.destroyDocument');
 
+Route::post('user/testReports','User\MedicalRecordsController@addMedicalTestReport')->name('medicalTestReport.add');
+
+
 /*Chat Routes*/
 
 
@@ -205,6 +220,7 @@ Route::get('/prescription-form', function () {
 Route::get('dashboard/user/slots', 'User\SlotsController@index')->name('user.appointments.index');
 Route::get('dashboard/user/prescription', 'User\DoctorsController@showPrescriptions')->name('user.prescription');
 Route::get('dashboard/user/orders', 'User\PharmaciesController@showOrders')->name('user.orders');
+Route::get('dashboard/user/medicalreports', 'User\PharmaciesController@showReports')->name('user.medicalReports');
 
 Route::post('/get-user', 'User\UsersController@getUser')->name('get-user');
 
@@ -227,7 +243,7 @@ Route::get('/dashboard/pharma', function () {
 
 
 
-Route::get('dashboard/pharma/manufacturerRequest', 'Pharma\ManufacturersController@index')->name('manufacturer.requests');
+Route::get('dashboard/pharma/supplierRequest', 'Pharma\ManufacturersController@index')->name('manufacturer.requests');
 Route::put('dashboard/pharma/{user}/Accept', 'Pharma\ManufacturersController@accept')->name('manufacturer.accept');
 Route::delete('dashboard/pharma/{user}/Reject', 'Pharma\ManufacturersController@reject')->name('manufacturer.reject');
 /*User Product*/
@@ -286,6 +302,7 @@ Route::post('cart/payment', 'CartController@payment')->name('cart.continueToPaym
 
 
 Route::get('feedback/index/{appointment_id}', 'FeedbackController@index')->name('feedback.index');
+
 Route::resource('feedback', 'FeedbackController');
 // Route::get('/feedback/index/{$appointment_id}',function(){
 //     return view('feedback.index');

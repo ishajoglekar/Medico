@@ -49,6 +49,13 @@
                             name="max_discount" id="max_discount">
                         </div>
                         <div class="form-group col-md-12">
+                            <label for="upto">Discount Percentage</label>
+                            <input type="number"
+                            value="{{old('upto')}}"
+                            class="form-control"
+                            name="upto" id="upto">
+                        </div>
+                        <div class="form-group col-md-12">
                             <label for="valid_till">Valid Till</label>
                             <input type="date"
                                 value="{{ old('valid_till')}}"

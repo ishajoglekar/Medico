@@ -26,6 +26,13 @@
               <span>Feedback</span>
               </a>
           </li>
+
+          <li>
+            <a  class="{{ $section =='medicalReports' ? 'active' : ''}}" href="{{route('doctor.medicalReports')}}">
+              <i class="fa fa-book"></i>
+              <span>Medical Test Reports</span>
+              </a>
+          </li>
          
 
         </ul>

@@ -24,7 +24,8 @@ class DynamicPDFController extends Controller
         $fn = 'pdf/' . $request->name . '_' . now()->timestamp . '.pdf';
         Storage::put($fn, $pdf->output());
         $appointment->update([
-            'report_pdf' => $fn
+            'report_pdf' => $fn,
+            'status'=>'completed'
         ]);
 
         

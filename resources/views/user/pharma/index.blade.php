@@ -131,9 +131,9 @@
     <div class="row">
         <div class="col-md-12">
            <div class="text-center text-white">
-                <p>Copyright © 2017, Medico. All rights reserved <br>
+                <p>Copyright © 2021, Medico. Ishaa Joglekar, Khushil Shah, Chintan Jagad - IT Department, KJSCE <br>
 Consult now | Email: support@medico.com <br>
-Medico Technologies Pvt. Ltd., Salarpuria Symbiosis, Arekere Village, Begur Hobli, Bannerghatta Main Rd, Bengaluru, Karnataka 560076</p>
+Medico Technologies Pvt. Ltd., Salarpuria Symbiosis,lorem ipsum Village, Begur Hobli, Lorem Main Rd, Mumbai 44444</p>
             </div>
            </div>
     </div>

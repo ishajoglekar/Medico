@@ -8,6 +8,7 @@ use App\Order;
 use App\Pharma;
 use App\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PharmaciesController extends Controller
 {
@@ -120,5 +121,15 @@ class PharmaciesController extends Controller
         ]));
 
 
+    }
+
+    public function showReports(){
+        $user = auth()->user();
+
+        $tests = DB::select("SELECT * FROM tests WHERE id in(select test_id from users_tests where user_id = $user->id)");
+        return view('user.dashboard.medicalReports', compact([
+            'user',
+            'tests'
+        ]));
     }
 }

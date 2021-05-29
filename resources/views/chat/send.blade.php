@@ -40,10 +40,7 @@
             <div class="back-img">
                 <img src="{{asset('assets/images/chat/back-img.jpg')}}" alt="">
             </div>
-            <div class="home-img">
-                <img src="{{asset('assets/images/logo/practo.svg')}}" alt="" width="100%" height="100%">
-
-            </div>
+          
             <div class="chat-right d-none">
                 <div class="container-fluid" style="border-bottom:solid 2px #999;">
                     <div class="row">

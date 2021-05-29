@@ -31,15 +31,15 @@ return [
     ],
 
     'twilio' => [
-        // 'sid' => env('TWILIO_ACCOUNT_SID'),
-        // 'token' => env('TWILIO_ACCOUNT_TOKEN'),
-        // 'key' => env('TWILIO_API_KEY'),
-        // 'secret' => env('TWILIO_API_SECRET')
+        'sid' => env('TWILIO_VIDEO_SID'),
+        'token' => env('TWILIO_VIDEO_TOKEN'),
+        'key' => env('TWILIO_VIDEO_KEY'),
+        'secret' => env('TWILIO_VIDEO_SECRET'),
 
-        'sid' => 'ACdca59173b2435fc1e7abb09d5268adaf',
-        'token' => '59ca2162c1011105ddca28c9acbb6333',
-        'key' => 'SKb9ab424d08099d6bc8ccd26aec4317a2',
-        'secret' => 'kf5ghapmBevoTz6oPYKrlslk31fkFEzy'
-    ]
+        // 'sid' => 'ACdca59173b2435fc1e7abb09d5268adaf',
+        // 'token' => '7635792b444a53f499644876a26337e6',
+        // 'key' => 'SK3abe8d322c1bd43ba2b2bc0a47ba6111',
+        // 'secret' => 'v8nZjTAIJ39fwYgAocqdVKBwtCCsI3rP'
+    ]   
 ];
 

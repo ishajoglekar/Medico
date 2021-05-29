@@ -309,14 +309,13 @@
 
                         var at = new Date(success[i][3].date+' '+success[i][2].start_time);
                         at.setMinutes(at.getMinutes() + success[i][6] );
-                        // alert(success[i][6]);
+                        console.log(new Date(success[i][0].updated_at).getTime());
+                        console.log(new Date(cd+' '+time).getTime());
                         at = at.getTime();
-                        if(success[i][0].status == 'accept' || success[i][0].status == 'active'){
-                            if(new Date(cd+' '+time).getTime()>new Date(success[i][3].date+' '+time).getTime()){
-
+                        if(success[i][0].status == 'accept' || success[i][0].status == 'active' ||success[i][0].status == 'completed'){
+                            if(new Date(cd+' '+time).getTime()<=new Date(success[i][0].updated_at).getTime()){
                                 status = "completed";
-                            }else if(new Date(cd+' '+time).getTime()<new Date(success[i][3].date+' '+time).getTime()){
-
+                            }else if(new Date(cd+' '+time).getTime()<new Date(success[i][0].updated_at).getTime()){
                                 status = "pending";
                             }else{
                                 if(ct>at){
@@ -337,13 +336,16 @@
                             <td>${success[i][3].date}</td>
                             <td>${success[i][2].start_time}</td>
                             <td>${success[i][4].name}</td>`;
-
+                        console.log(status);
                         if(status == "completed"){
+                            
                             if(!success[i][0].report_pdf){
                                 content += `<td class="d-flex">
                                             <a id="generate-btn" data-id="${success[i][0].id}" class='btn btn-primary btn-sm' href="#" data-toggle="modal" data-target="#pdf-modal"><i class="fa fa-check" style="margin-right: 7px"></i>Generate</a>
+                                            
                                         </td>`;
                             }else{
+                                
                                 content += `<td class="d-flex">
                                             Done
                                         </td>`;

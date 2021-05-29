@@ -63,7 +63,7 @@
                 <div class="row">
                     <div class="col-md-8 pl-5 pr-4">
                         <div class="heading pt-4">
-                            <h3 class="filtered-count">Book from 2037 Dentists in Mumbai</h3>
+                            <h3 class="filtered-count">Book from {{$doctors->count()}} Doctors in Mumbai</h3>
                             <p class="sub-title">With predicted wait-time & verified details</p>
                         </div>
                         <div id="doctors">
@@ -75,14 +75,14 @@
                                                 <div class="doctor-details d-flex">
                                                     <div class="doctor-photo">
                                                         <div class="text-center">
-                                                    @if($doctor->image != NULL)
+                                                    @if($doctor->image)
                                                         <img
                                                             class="doctor-img"
                                                             src="{{asset('storage/'.$doctor->image)}}"/>
                                                     @else
-                                                          <img data-qa-id="doctor-profile-image"
+                                                        <img data-qa-id="doctor-profile-image"
                                                             class="c-profile__image"
-                                                            src="{{auth()->user()::getAvatarAttribute($doctor->fullname,90)}} "/>
+                                                            src="{{App\User::getAvatarAttribute($doctor->fullname,90)}} "/>
                                                         @endif
 
                                                         </div>

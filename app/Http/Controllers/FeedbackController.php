@@ -41,8 +41,8 @@ class FeedbackController extends Controller
      */
     public function store(Request $request)
     {
-        $doctor_id = Appointment::where('user_id',auth()->user()->id)->where('status','accept')->first()->doctor_id;
-        // dd($request);
+        $doctor_id = Appointment::where('user_id',auth()->user()->id)->where('status','accept')->orWhere('status','active')->first()->doctor_id;
+        // dd(Appointment::where('user_id',auth()->user()->id)->where('status','accept')->orWhere('status','active')->first()->doctor_id);
         $section='';
         $feedback = Feedback::create([
             'user_id'=>auth()->user()->id,

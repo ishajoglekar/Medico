@@ -227,7 +227,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Order Confirmation</h5>
         <button type="button" class="close"  aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -284,7 +284,7 @@ $("#payment-tab").click(function(){
   $("#login").hide();
 });
 
-
+var totalPrice = {{$finalAmount}};
 $('#addBtn').click(function(){
 
 var address = $('#addressContent').val();
@@ -329,17 +329,21 @@ var coupon = $('#coupon').val();
         },
         dataType : 'json',
         success: function(success){
-            // console.log(success['success']);
+            console.log(success);
 
             if(success['coupon']){
                 coupon_id = success['coupon'].id;
-                $('#discount').html(success['coupon'].discount);
-                var totalPrice = {{$finalAmount}};
-                var discountedAmount = (totalPrice*success['coupon'].discount)/100;
-                if(discountedAmount>success['coupon'].upto){
-                    discountedAmount = success['coupon'].upto;
+                $('#discount').html(success['coupon'].max_discount);
+                totalPrice = {{$finalAmount}};
+                
+                var discountedAmount = (totalPrice*success['coupon'].upto)/100;
+                console.log(discountedAmount);
+                if(discountedAmount>success['coupon'].max_discount){
+                    discountedAmount = success['coupon'].max_discount;
                 }
                 totalPrice -=(discountedAmount);
+        
+                console.log(totalPrice);
                 $('#discount').html(discountedAmount);
                 $('#payable').html(totalPrice);
             }else{
@@ -355,6 +359,7 @@ $('#placeOrder').click(function(e){
 e.preventDefault();
 var coupon = $('#coupon').val();
     let route = "{{route('cart.placeOrder')}}";
+    console.log(totalPrice);
     $.ajax({
         url: route,
         method: "POST",
@@ -362,15 +367,19 @@ var coupon = $('#coupon').val();
             _token: "{{ csrf_token() }}",
             'user_id': id,
             'coupon': coupon,
-            'amount':{{$finalAmount}},
+            'amount':totalPrice,
         },
         dataType : 'json',
         success: function(success){
-            // console.log(success['success']);
+            console.log(success['success']);
+            console.log("hi isha");
 
             if(success['reason']){
                 $('#OrderPlacedMessage').html(success['reason']);
             }
+        },
+        error:function(error){
+           console.log(error);
         }
     });
 });
