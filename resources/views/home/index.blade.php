@@ -65,9 +65,10 @@
                   <div class="s-static__card u-margin--10__right">
                     <div class="card--560 u-margin--15__right" style="margin: 0!important">
                       <div class="card__img--580x225"><a
-                          href="mumbai/doctors154c.html?utm_source=consumer-home&amp;utm_medium=web&amp;utm_campaign=core"><span
+                          href="{{route('doctors.findDoctors')}}"><span
                             class="LazyLoad">
-                            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/find-doctors-2.png" alt="Find Doctors" class="card__img">
+                            <a href="{{route('doctors.findDoctors')}}">
+                            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/find-doctors-2.png" alt="Find Doctors" class="card__img"></a>
                         </span></a></div>
                     </div>
                   </div>
@@ -660,9 +661,12 @@
                     rel="nofollow"><span>Youtube</span></a><a data-qa-id="footer-item" target="_blank"
                     class="c-footer__item" href="http://github.com/practo" rel="nofollow"><span>Github</span></a></div>
               </div>
+
             </div>
+
+         
             <div class="c-footer__copyright"><span class="LazyLoad"></span>
-              <div class="c-copyright"><span>Copyright © 2017, Medico. </span><span>All rights reserved.</span></div>
+              <div class="c-copyright"><span>Copyright © 2021, Medico. Ishaa Joglekar, Khushil Shah, Chintan Jagad - IT Department, KJSCE <br><span>All rights reserved.</span></div>
             </div>
           </div>
         </footer>

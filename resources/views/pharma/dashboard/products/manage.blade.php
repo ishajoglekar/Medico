@@ -14,7 +14,7 @@
                 <th>Description</th>
                 <th>Category</th> 
                 <th>Subcategory</th>
-                <th>Manufacturer</th>
+                <th>Supplier</th>
                 <th>Actions</th>
             </thead>
             <tbody>

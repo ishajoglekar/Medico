@@ -20,7 +20,7 @@
                 @endif
           </div>
           <div class="col-md-7">
-            <img src="{{asset('dashboard/img/portfolio_main.PNG')}}" alt="">
+           
           </div>
         </div>
     </div>

@@ -100,7 +100,7 @@ class DatabaseSeeder extends Seeder
                 'description' => $faker->sentence(rand(5,6)),
                 'fees' => rand(1000,10000),
                 'phone_no' => rand(1000000000,9999999999),
-                'password' => $faker->word,
+                'password' => '$2y$10$ckpf//racepEDB9TGR2ZLu3JkVrPKUlaXorZIiWF4eZf87O83lPX2',
                 'email'=> $faker->unique()->safeEmail,
                 'city_id' => rand(1,$city_id),
                 'address' => $faker->sentence(rand(5,6)),
@@ -117,6 +117,19 @@ class DatabaseSeeder extends Seeder
                 'establishment_address' =>  $faker->sentence(rand(5,6)),
                 'establishment_city_id' => rand(1,$city_id),
                 'establishment_pincode' => rand(1000,999999),
+            ]);
+
+            $user = User::create([
+                'name' => $doctor->fullname,
+                'email' => $doctor->email,
+                'email_verified_at' => now(),
+                'password' => '$2y$10$ckpf//racepEDB9TGR2ZLu3JkVrPKUlaXorZIiWF4eZf87O83lPX2' , // password
+                'gender'=> $doctor->gender,
+                'role'=>'doctor',
+                'age'=>rand(20,50),
+                'phone_no'=> $doctor->phone_no,
+                'remember_token' => Str::random(10),
+                'doctor_id'=>$doctor->id
             ]);
             $doctor->type()->attach(rand(1,$type->id));
         }
@@ -136,15 +149,25 @@ class DatabaseSeeder extends Seeder
             $subcategory_id = $subcategory->id;
         }
 
-        $i=1;
-        while($i<15){
-            $i++;
-            $manufacturer = Manufacturer::create([
-                'name'=>"John Doe",
-                'user_id'=>$i
-            ]);
-            $manufacture_id = $manufacturer->id;
-        }
+        // $i=1;
+        // while($i<15){
+        //     $i++;
+        //     $manufacturer = Manufacturer::create([
+        //         'name'=>$faker->name,
+        //         'user_id'=>$i
+        //     ]);
+        //     $manufacture_id = $manufacturer->id;
+        // }
+
+
+        $manufacturer = Manufacturer::create([
+            'name'=>"John Doe",
+            'user_id'=>1,
+            
+        ]);
+
+        $manufacture_id = 1;
+
 
         // while(($ing = fgetcsv($ingredients)) !== FALSE){
         //     $ingredient = Ingredient::create([

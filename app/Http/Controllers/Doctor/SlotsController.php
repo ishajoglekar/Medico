@@ -141,6 +141,7 @@ class SlotsController extends Controller
     {
         $slot_date = SlotDate::find($slot_date);
         $section = 'slots';
+        if($request->old){
         foreach($request->old as $old){
             if(explode('-',$old)[1]>0)
             {
@@ -174,6 +175,7 @@ class SlotsController extends Controller
                 }
             }
         }
+    }
         return redirect(route('slots.index'));
     }
 

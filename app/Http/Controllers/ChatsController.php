@@ -36,8 +36,6 @@ class ChatsController extends Controller
             return json_encode($success);
         }
 
-
-
         return null;
     }
     public function received(Request $request)

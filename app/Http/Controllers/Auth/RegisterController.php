@@ -17,6 +17,7 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use App\Http\Requests\RegisterRequest;
 use App\Notification_type;
+use App\OnlineDoctor;
 use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Support\Facades\Validator;
@@ -252,8 +253,16 @@ class RegisterController extends Controller
                     }
                     $otp->delete();
                     Auth::login($user);
-                    if(session()->get('role') == 'doctor')
+                    if(session()->get('role') == 'doctor'){
+                        // if(auth()->user()->doctor_id != NULL){
+                        //     $log = OnlineDoctor::all()->where('doctor_id',auth()->user()->doctor_id);
+                        //     if(empty($log[0]) && auth()->user()->doctor_id){
+                        //         $log = new OnlineDoctor();
+                        //         $log->createNewEntry();
+                        //     }
+                        // }
                         return redirect()->route('doctor.dashboard');
+                    }
                     else if(session()->get('role') == 'user'){
 
                         return redirect()->route('index');

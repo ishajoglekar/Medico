@@ -201,7 +201,7 @@
                               <div class="feedback__body">
                                 <p class="feedback__content u-cushion--bottom u-title-font u-bold"
                                   data-qa-id="visited-for"><span><span>Visited For</span> </span><span
-                                    class="procedure">Sexual Weakness</span></p>
+                                    class="procedure">Covid 19</span></p>
                                 <div class="u-cushion--small-bottom u-large-font"><i
                                     class="u-large-font  u-cushion--small-right icon-ic_like"
                                     data-qa-id="feedback_thumbs_up"></i><span>I recommend the doctor</span></div>
@@ -214,14 +214,7 @@
                                     class="feedback__context">Wait time</span></p>
                                 <div>
                                   <p class="feedback__content u-large-font u-d-inline" data-qa-id="review-text">I was
-                                    having some issues related to sex. But when my friend recommended Dr.Akumar for
-                                    treatment and I went to clinic. Counter staff took my appointment and I waited for
-                                    around 15-20 min and after that Dr. A kumar called me inside. When Dr finished his
-                                    other petient. And Dr Akumar gave us all kind of information regarding my sex
-                                    issues. And he was friendly so I was also very comfortable to share my problem. He
-                                    suggested me ayurvedic medicine. And trust me it was work like anything. I called
-                                    Dr&#039;s clinic after 20 days for thanking him for resolving my problem. I
-                                    suggested Dr. Akumar name to my friends.</p>
+                                    </p>
                                 </div>
                               </div>
                             </div>
@@ -243,7 +236,7 @@
                               <div class="feedback__body">
                                 <p class="feedback__content u-cushion--bottom u-title-font u-bold"
                                   data-qa-id="visited-for"><span><span>Visited For</span> </span><span
-                                    class="procedure"> Premature Ejaculation</span></p>
+                                    class="procedure"> Cold </span></p>
                                 <div class="u-cushion--small-bottom u-large-font"><i
                                     class="u-large-font  u-cushion--small-right icon-ic_like"
                                     data-qa-id="feedback_thumbs_up"></i><span>I recommend the doctor</span></div>
@@ -275,67 +268,10 @@
                                     class="u-spacer--left-thin u-f-right">12
                                     <!-- --> <span>days ago</span> </span></div>
                               </div>
-                              <div class="feedback__body">
-                                <p class="feedback__content u-cushion--bottom u-title-font u-bold"
-                                  data-qa-id="visited-for"><span><span>Visited For</span> </span><span
-                                    class="procedure"> Premature Ejaculation</span></p>
-                                <div class="u-cushion--small-bottom u-large-font"><i
-                                    class="u-large-font  u-cushion--small-right icon-ic_like"
-                                    data-qa-id="feedback_thumbs_up"></i><span>I recommend the doctor</span></div>
-                                <p class="feedback__content u-cushion--small-bottom u-large-font"
-                                  data-qa-id="happy-with"><span><span>Happy with:</span> </span><span
-                                    class="feedback__context">Doctor friendliness</span><span
-                                    class="feedback__context">Explanation of the health issue</span><span
-                                    class="feedback__context">Treatment satisfaction</span><span
-                                    class="feedback__context">Value for money</span><span
-                                    class="feedback__context">Wait time</span></p>
-                                <div>
-                                  <p class="feedback__content u-large-font u-d-inline" data-qa-id="review-text">I
-                                    visited for premature ejaculation problem. I was facing the problem since last 6
-                                    months but not getting proper results. Then I visited to Dr. A. Kumar. He gave me
-                                    2 months medicines <span
-                                      title="This part is not displayed  as it talks about medical ability of the doctor which is a matter that requires an expert opinion."
-                                      id="blurrText51429" class="blurr-text"
-                                      style="color: rgb(205, 205, 205); background-color: rgb(221, 221, 221);">*** ***
-                                      ********* *** **** **** ******** *** *********** </span>They did my all medical
-                                    history and it was satisfactory treatment.thanks.</p>
-                                </div>
-                              </div>
+                              
                             </div>
                           </div>
-                          <div class="pure-g feedback--item u-cushion--medium-vertical" data-qa-id="feedback_item">
-                            <div class="pure-u-2-24">
-                              <div class="feedback__icon" data-qa-id="reviewer-image"
-                                style="background-color:#C8FAC8">P</div>
-                            </div>
-                            <div class="pure-u-22-24 u-lheight-default">
-                              <div>
-                                <div class="u-cushion--bottom u-color--grey3 u-cushion--small-top"><span
-                                    class="u-bold" data-qa-id="reviewer-name">P
-                                    <!-- -->rashant Raikar</span> <span
-                                    class="u-bold">(<span>Verified</span>)</span><span data-qa-id="web-review-time"
-                                    class="u-spacer--left-thin u-f-right">20
-                                    <!-- --> <span>days ago</span> </span></div>
-                              </div>
-                              <div class="feedback__body">
-                                <p class="feedback__content u-cushion--bottom u-title-font u-bold"
-                                  data-qa-id="visited-for"><span><span>Visited For</span> </span><span
-                                    class="procedure">Loss of Libido</span><span class="procedure">Sexual
-                                    Disorders</span></p>
-                                <div class="u-cushion--small-bottom u-large-font"><i
-                                    class="u-large-font  u-cushion--small-right icon-ic_like"
-                                    data-qa-id="feedback_thumbs_up"></i><span>I recommend the doctor</span></div>
-                                <p class="feedback__content u-cushion--small-bottom u-large-font"
-                                  data-qa-id="happy-with"><span><span>Happy with:</span> </span><span
-                                    class="feedback__context">Treatment satisfaction</span></p>
-                                <div>
-                                  <p class="feedback__content u-large-font u-d-inline" data-qa-id="review-text">First
-                                    time I am using this word for any Dr &quot;Genius&quot; I want to thank God that I
-                                    found Dr Arun, greatest thanks from me.</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                       
                         </div>
                       </div>
                       <div class="u-border-general--thin-top u-cushion--top"><a data-qa-id="show-all-feedback"
@@ -446,84 +382,10 @@
                                 <!-- -->) </span></span>
                           </div>
                           <div class="p-entity--list">
+                           
                             <div class="pure-u-1-3 u-cushion--right-less">
                               <div class="p-entity__item" data-qa-id="services-item"><span
-                                  class="u-spacer--right-less p-entity__item-title-label"><a
-                                    href="../doctors-for-male-sexual-problems.html">Male Sexual Problems</a></span>
-                              </div>
-                            </div>
-                            <div class="pure-u-1-3 u-cushion--right-less">
-                              <div class="p-entity__item" data-qa-id="services-item"><span
-                                  class="u-spacer--right-less p-entity__item-title-label"><span>Premature
-                                    Ejaculation</span></span></div>
-                            </div>
-                            <div class="pure-u-1-3 u-cushion--right-less">
-                              <div class="p-entity__item" data-qa-id="services-item"><span
-                                  class="u-spacer--right-less p-entity__item-title-label"><a
-                                    href="../doctors-for-treatment-of-erectile-dysfunction.html">Treatment Of Erectile
-                                    Dysfunction</a></span></div>
-                            </div>
-                            <div class="pure-u-1-3 u-cushion--right-less">
-                              <div class="p-entity__item" data-qa-id="services-item"><span
-                                  class="u-spacer--right-less p-entity__item-title-label"><span>Masturbation Treatment
-                                  </span></span></div>
-                            </div>
-                            <div class="pure-u-1-3 u-cushion--right-less">
-                              <div class="p-entity__item" data-qa-id="services-item"><span
-                                  class="u-spacer--right-less p-entity__item-title-label"><span>Nightfall
-                                    treatment</span></span></div>
-                            </div>
-                            <div class="pure-u-1-3 u-cushion--right-less">
-                              <div class="p-entity__item" data-qa-id="services-item"><span
-                                  class="u-spacer--right-less p-entity__item-title-label"><span>Swapandosh
-                                    Treatment</span></span></div>
-                            </div>
-                            <div class="pure-u-1-3 u-cushion--right-less">
-                              <div class="p-entity__item" data-qa-id="services-item"><span
-                                  class="u-spacer--right-less p-entity__item-title-label"><span>Dhaat Rog
-                                    Treatment</span></span></div>
-                            </div>
-                            <div class="pure-u-1-3 u-cushion--right-less">
-                              <div class="p-entity__item" data-qa-id="services-item"><span
-                                  class="u-spacer--right-less p-entity__item-title-label"><span>Infertility
-                                    Treatment</span></span></div>
-                            </div>
-                            <div class="pure-u-1-3 u-cushion--right-less">
-                              <div class="p-entity__item" data-qa-id="services-item"><span
-                                  class="u-spacer--right-less p-entity__item-title-label"><span>Penis Size Enlargement
-                                    Treatment</span></span></div>
-                            </div>
-                            <div class="pure-u-1-3 u-cushion--right-less">
-                              <div class="p-entity__item" data-qa-id="services-item"><span
-                                  class="u-spacer--right-less p-entity__item-title-label"><a
-                                    href="../doctor-for-sexually-transmitted-disease-std-treatment.html">Sexually
-                                    Transmitted Disease (STD) Treatment</a></span></div>
-                            </div>
-                            <div class="pure-u-1-3 u-cushion--right-less">
-                              <div class="p-entity__item" data-qa-id="services-item"><span
-                                  class="u-spacer--right-less p-entity__item-title-label"><span>Herpes
-                                    Treatment</span></span></div>
-                            </div>
-                            <div class="pure-u-1-3 u-cushion--right-less">
-                              <div class="p-entity__item" data-qa-id="services-item"><span
-                                  class="u-spacer--right-less p-entity__item-title-label"><span>Jock Itch or Inguinal
-                                    or Fungal Itch Treatment</span></span></div>
-                            </div>
-                            <div class="pure-u-1-3 u-cushion--right-less">
-                              <div class="p-entity__item" data-qa-id="services-item"><span
-                                  class="u-spacer--right-less p-entity__item-title-label"><a
-                                    href="../doctors-for-male-infertility-treatment.html">Male Infertility
-                                    Treatment</a></span></div>
-                            </div>
-                            <div class="pure-u-1-3 u-cushion--right-less">
-                              <div class="p-entity__item" data-qa-id="services-item"><span
-                                  class="u-spacer--right-less p-entity__item-title-label"><span>Delayed / Absent
-                                    Ejaculation</span></span></div>
-                            </div>
-                            <div class="pure-u-1-3 u-cushion--right-less">
-                              <div class="p-entity__item" data-qa-id="services-item"><span
-                                  class="u-spacer--right-less p-entity__item-title-label"><span>Retrograde
-                                    Ejaculation</span></span></div>
+                                  class="u-spacer--right-less p-entity__item-title-label"><span>Covid 19</span></span></div>
                             </div>
                           </div>
                         </div>
@@ -545,7 +407,7 @@
                             <div class="pure-u-1">
                               <div class="p-entity__item" data-qa-id="specializations-item"><span
                                   class="u-spacer--right-less p-entity__item-title-label"><a
-                                    href="../sexologist.html">Special Interest in Sexology</a></span></div>
+                                    href="../sexologist.html">Special Interest in Ayurveda</a></span></div>
                             </div>
                           </div>
                         </div>
@@ -649,7 +511,7 @@
                             <div class="pure-u-1">
                               <div class="p-entity__item" data-qa-id="experience-item"><span
                                   class="u-spacer--right-less p-entity__item-title-label"><span>1989 - 2016 Doctor at
-                                    Kaya Kalp International Sex &amp; Health Clinics</span></span></div>
+                                    Kaya Kalp International Health Clinics</span></span></div>
                             </div>
                           </div>
                         </div>
@@ -783,9 +645,7 @@
                               <div>
                                 <div class="u-d-flex flex-jc-space-between">
                                 <div class="u-bold u-base-font u-t-ellipsis">{{$doctor->establishment_name}}</div>
-                                  <div class="u-color--practo-blue u-t-right u-bold u-ws-nwrap u-c-pointer"><span>Change
-                                      Clinic</span><i class="icon-ic_down_cheveron u-valign--middle u-base-font"></i>
-                                  </div>
+                                  
                                 </div>
                                 <div class="u-spacer--vertical-thin"><span class="u-spacer--right-thin">5<i
                                       class="icon-ic_star_solid u-spacer--small-left"></i></span><span
@@ -1401,7 +1261,7 @@
                 {
                     content += `<div class="mb-2">`;
 
-
+                    // console.log(test[1]);
                     for(i=0; i<test[1].length; i++)
                     {
                         // console.log(test[0][i][0]['start_time']);

@@ -27,12 +27,13 @@
                 <span>Orders</span>
             </a>
           </li>
-          <!-- <li>
-            <a  href="">
+          <li>
+            <a  href="{{route('user.medicalReports')}}">
               <i class="fa fa-book"></i>
-              <span>Online Consultations</span>
+              <span>Medical Test Reports</span>
               </a>
           </li>
+          <!--
           <li>
             <a  href="">
               <i class="fa fa-book"></i>

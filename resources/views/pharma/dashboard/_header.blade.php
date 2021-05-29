@@ -169,7 +169,9 @@
       </div>
       <div class="top-menu">
         <ul class="nav pull-right top-menu">
-          <li><a class="logout" href="login.html">Logout</a></li>
+          <li><form action="{{route('logout',auth()->user()->id)}}" method="POST">
+                @csrf
+            <button type="submit" class="nav-login-btn btn-primary">Logout</button></form></li>
         </ul>
       </div>
     </header>
